@@ -1,0 +1,91 @@
+<form name="cadre" id="cadreRegistrationForm" ng-submit="cadreCtrl.save()">
+	<div class="row rightContent"> 
+		<div class="large-16 columns formContent">			
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Party Membership#:</label>
+				</div>
+				<div class="large-12 columns left">
+					<input type="text" id="membershipId" class="input" name="membershipId" data-val="partyMembershipId" ng-model="cadreCtrl.user.cadre.partyMembershipId">
+					<div class="error-class"><div class="error-content"></div></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Position in the Party:</label>
+				</div>
+				<div class="large-12 columns left">
+					<select id="position" name="position" class="input" ng-model="cadreCtrl.user.cadre.positionId">
+						<option value="">Select Position</option>
+						<option value="1">Volunteer</option>
+						<option value="2">Leader</option>
+						<option value="3">President</option>
+						<option value="4">Local Leader</option>
+					</select>
+				</div>
+			</div> 
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Responsibility in the Party:</label>
+				</div>
+				<div class="large-12 columns left">
+					<div class="large-12 columns left">
+						<input type="text" id="partyResponsibility" class="input" name="partyResponsibility" ng-model="cadreCtrl.user.cadre.partyResponsibility">
+						<div class="error-class"><div class="error-content"></div></div>
+					</div>					
+				</div>				
+			</div>			
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Health Insured:</label>
+				</div>
+				<div class="large-12 columns left radioGroup">
+					<input type="radio" name="healthInsured" value="1" id="yes" ng-model="cadreCtrl.user.healthInsurance"><label for="healthInsured">Yes</label>
+					<input type="radio" name="healthInsured" value="0" id="no" ng-model="cadreCtrl.user.healthInsurance"><label for="healthInsured">No</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Life Insured:</label>
+				</div>
+				<div class="large-12 columns left radioGroup">
+					<input type="radio" name="lifeInsured" value="1" id="yes" ng-model="cadreCtrl.user.lifeInsurance"><label for="lifeInsured">Yes</label>
+					<input type="radio" name="lifeInsured" value="0" id="no" ng-model="cadreCtrl.user.lifeInsurance"><label for="lifeInsured">No</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Blood Group:</label>
+				</div>
+				<div class="large-12 columns left">
+					<select id="bloodGroup" name="bloodGroup" class="input" ng-model="cadreCtrl.user.bloodGroupId">
+						<option value="">Select Blood Group</option>
+						<option value="1">A +ve</option>
+						<option value="2">O +ve</option>
+						<option value="3">B +ve</option>
+						<option value="4">AB +ve</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+					<label class="right inline">Performance Grade:</label>
+				</div>                    
+				<div class="large-12 columns right">
+					<select id="grade" class="input" name="grade" ng-model="cadreCtrl.user.performanceGradeId"  ng-options="grade.gradeId as grade.gradeDescription for grade in performanceGradeOptions">
+						<option value="">Select Performance Grade</option>						
+					</select>					
+				</div>				
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+				</div>
+				<div class="large-12 columns">
+					<button class="radius small button submit">Save as Cadre</button>
+					<button class="radius small button cancel" href="#">Back</button>
+				</div>
+			</div>				
+		</div>
+	</div>
+</form>
+   

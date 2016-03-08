@@ -1,0 +1,72 @@
+
+    <div class="search-filter">
+      <div class="row">
+        <div class="large-8 small-16 columns padding-none actions">
+          <a href="#" class="add">Add Member</a> | <a href="#" class="edit">Edit</a> | <a href="#" class="delete">Delete</a>
+        </div>
+        <div class="large-6 small-13 columns padding-none">
+          <input type="text" class="search" placeholder="Search" />
+          <input type="button" value=" " class="search-btn" />
+        </div>
+        <div class="large-2 small-3 columns padding-none">
+          <input type="button" value="Advance Search" class="adv-search" /> 
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h1>View Member</h1>
+      <div class="content-wrapper">
+        <div class="large-13 columns padding-none">
+          <div class="member-info">
+            <span class="left">{{viewCtrl.user.firstName}} {{viewCtrl.user.lastName}}</span> 
+            <!-- <span class="{{role | lowercase}}" ng-repeat="role in (viewCtrl.user.roles.split(','))"></span> -->            
+            <br>              
+            <label>Age/Gender: {{viewCtrl.user.age}}/{{viewCtrl.user.gender}} </label>
+            <label>Phone: {{viewCtrl.user.phoneNumber}}</label>
+            <label>Email: <a href="mailto:{{viewCtrl.user.emailId}}">{{viewCtrl.user.emailId}}</a></label>
+            <label>Location: {{viewCtrl.user.workingLocation}}</label>
+            <label>Constituency: {{viewCtrl.user.constituency}} </label> 
+            <br>
+            <a href="#" class="view-more">View more details</a> <a href="#" class="reset-pswd"> Reset Password</a>
+          </div>
+        </div>
+        <div class="large-3 columns members">
+          <img src="{{viewCtrl.user.photograph}}" title="members"  class="photo1"/>
+        </div>
+        <div class="row">
+          <div class="large-16 columns">
+            <h4>Tasks Assigned </h4>
+			<table cellspacing="0" class="view-memeber-work-sheet ng-scope">
+	<thead>
+		<tr>
+			<th width="80">S.No</th>
+			<th width="150">Task Planned</th>
+			<th width="140">Task Category</th>
+			<th width="100">Location</th>
+			<th>Target Date</th>
+			<th width="140">Status</th>
+			<th width="130">Age of Task Allocated</th>
+			<th width="150">Reasons for Delay</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				1
+			</td>			
+			<td>Collect bills</td>
+			<td>Administration</td>
+			<td>Hyderabad</td>
+			<td>2/04/2015</td>
+			<td>In progress</td>
+			<td>2 months</td>
+			<td>Not available</td>
+			
+		</tr>
+	</tbody>
+</table>
+          </div>
+        </div>
+      </div>
+    </div>
+   

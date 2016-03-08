@@ -1,0 +1,116 @@
+<form name="address" id="addressRegistrationForm" ng-submit="addressCtrl.save()">
+	<div class="row rightContent"> 
+		<div class="large-16 columns formContent">
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Address Line1:</label>
+				</div>
+				<div class="large-12 columns left">
+					<input type="text" id="addressLine1" class="input" name="addressLine1" data-val="addressLine1" ng-model="addressCtrl.user.addressLine1">
+					<div class="error-class"><div class="error-content"></div></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Address Line2:</label>
+				</div>
+				<div class="large-12 columns left">
+					<input type="text" id="addressLine2" class="input" name="addressLine2" data-val="addressLine2" ng-model="addressCtrl.user.addressLine2">
+					<div class="error-class"><div class="error-content"></div></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Search Address:</label>
+				</div>
+				
+				<div class="large-12 columns left">
+				
+
+					<input type="hidden" ng-model="addressCtrl.user.postalAddress.postalAddressId" />
+					<div id="autoCompleteContainer" autocomplete-address-directive>
+						
+						<input type="text" id="postalAddress" class="input" name="postalAddress" data-val="postalAddress"  placeholder="Search by pincode">
+							<img src="images/searchicon.png" class="search-icon" id="searchIcon">
+
+					</div>
+
+
+
+					<div class="error-class"><div class="error-content"></div></div>
+				</div>
+			</div>			
+			
+		
+
+
+			<div class="row" ng-repeat="(key, value) in voterNodeObj">				
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">{{key}}:</label>
+				</div>
+				<div class="large-12 columns left">
+					<span class="address-line">{{value}}</span>
+				</div>
+			</div>
+
+
+
+			<div class="row">
+				<div class="large-4 columns">
+				   &nbsp;
+				</div>
+				<div class="large-12 columns left">
+					<a href="#" class="link">Add another Address</a>
+				</div>
+			</div> 
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Non-resident Indian[NRI]:</label>
+				</div>
+				<div class="large-12 columns left radioGroup">
+					<input type="radio" name="nri" ng-model="addressCtrl.nri.nriAddress" value="true" id="nriTrue"><label for="nriTrue">Yes</label>
+					<input type="radio" name="nri" ng-model="addressCtrl.nri.nriAddress" value="false" id="nriFalse"><label for="nriFalse">No</label>
+				</div>				
+			</div>
+			<div ng-show="addressCtrl.nri.nriAddress=='true'">
+				<div class="row">
+					<div class="large-4 columns">
+						<label for="right-label" class="right inline">Address Line 1:</label>
+					</div>
+					<div class="large-12 columns left">
+						<input type="text" id="nriAddressLine1" class="input" name="nriAddressLine1" data-val="nriAddressLine1" ng-model="addressCtrl.nri.addressLine1">
+						<div class="error-class"><div class="error-content"></div></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-4 columns">
+						<label for="right-label" class="right inline">Address Line 2:</label>
+					</div>
+					<div class="large-12 columns left">
+						<input type="text" id="nriAddressLine2" class="input" name="nriAddressLine2" ng-model="addressCtrl.nri.addressLine2">
+						<div class="error-class"><div class="error-content"></div></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-4 columns">
+						<label for="right-label" class="right inline">Country:</label>
+					</div>
+					<div class="large-12 columns left">
+						<input type="text" id="nriCountry" class="input" name="nriCountry" ng-model="addressCtrl.nri.nriCountry">
+						<div class="error-class"><div class="error-content"></div></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+					&nbsp;
+				</div>
+				<div class="large-12 columns left">
+					<button class="radius small button submit left">Save & Continue</button>					
+					<a class="radius small button cancel" href="#/register/voter">Back</a>
+				</div>
+			</div>            
+		</div>    
+	</div>
+</form>
+   

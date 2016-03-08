@@ -1,0 +1,151 @@
+<form name="personal" id="personalRegistrationForm" ng-submit="personalCtrl.save()">
+  <div class="row rightContent">
+    <div class="large-16 columns formContent">
+      <div class="row">
+        <div class="large-4 columns">
+          <label for="right-label" class="right inline">Name:</label>
+        </div>
+        <div class="large-4 columns left">
+          <input type="text" id="firstName" class="name required" ng-model="personalCtrl.user.firstName" data-val="signupFirstName" placeholder="First Name">
+        </div>
+        <div class="large-3 columns left">
+          <input type="text" id="middleName" class="name" ng-model="personalCtrl.user.middleName" placeholder="Middle Name" >
+        </div>
+        <div class="large-4 columns left">
+          <input type="text" id="lastName" class="name required" ng-model="personalCtrl.user.lastName" data-val="signupLastName" placeholder="Last Name">
+        </div>
+        <div class="large-12 columns left">
+          <div class="error-class"><div class="error-content"></div></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 columns">
+          <label for="right-label" class="right inline">User/Login Name:</label>
+        </div>
+        <div class="large-12 columns left" resource-directive>
+          <input type="text" id="userName" class="input loader-input" data-val="userName" name="userName" ng-model="personalCtrl.user.loginId" data-inputname="userName">
+         
+          <div class="error-class"><div class="error-content"></div></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 columns">
+          <label for="right-label" class="right inline">Gender:</label>
+        </div>
+        <div class="large-12 columns left radioGroup">
+          <input type="radio" name="gender" value="M" id="male" ng-model="personalCtrl.user.gender" ng-change="personalCtrl.getGender(personalCtrl.user.gender)"><label for="male">Male</label>
+          <input type="radio" name="gender" value="F" id="female" ng-model="personalCtrl.user.gender" ng-change="personalCtrl.getGender(personalCtrl.user.gender)"><label for="female">Female</label>
+          <input type="radio" name="gender" value="O" id="notToDisclose" ng-model="personalCtrl.user.gender" ng-change="personalCtrl.getGender(personalCtrl.user.gender)"><label for="notToDisclose">Not to be disclosed</label>
+          <div class="error-class"><div class="error-content"></div></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 columns">
+          <label for="right-label" class="right inline">Date of Birth:</label>
+        </div>
+        <div class="large-12 columns left">
+          <input type="text" id="dob" class="input required" name="dob" data-val="dob" ng-model="personalCtrl.user.dateOfBirth" dob="personalCtrl.user.dateOfBirth">
+          <div class="error-class"><div class="error-content"></div></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 columns">
+          <label for="right-label" class="right inline">Aadhar ID#:</label>
+        </div>
+        <div class="large-12 columns left">
+          <input type="text" id="aadharId" class="input" name="aadharId" ng-model="personalCtrl.user.aadharId" data-val="aadharId">
+          <div class="error-class"><div class="error-content"></div></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 columns">
+          <label for="right-label" class="right inline">Mobile Phone:</label>
+        </div>
+        <div class="large-12 columns " resource-directive>
+          <input type="text" id="mobile" class="input required loader-input" name="mobile" data-val="userMobile" ng-model="personalCtrl.user.mobileNumber" data-inputname="mobileNumber">
+          <div class="error-class"><div class="error-content"></div></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 columns">
+          <label for="right-label" class="right inline">Landline Phone:</label>
+        </div>
+        <div class="large-12 columns ">
+          <input type="text" id="landLine" class="input" name="landLine" ng-model="personalCtrl.user.phoneNumber" data-val="userPhone">
+          <div class="error-class"><div class="error-content"></div></div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="large-4 columns">
+          <label for="right-label" class="right inline">Email Address:</label>
+        </div>
+        <div class="large-12 columns" resource-directive>
+          <input type="text" id="email" class="input loader-input" name="email" ng-model="personalCtrl.user.emailId" data-val="userEmail" data-inputname="email">
+          <div class="error-class"><div class="error-content"></div></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 columns">
+          <label for="right-label" class="right inline">Skype ID:</label>
+        </div>
+        <div class="large-12 columns">
+          <input type="text" id="skypeId" class="input" name="skypeId" ng-model="personalCtrl.user.skypeId" data-val="skypeId">
+          <div class="error-class"><div class="error-content"></div></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 columns">
+          <label for="right-label" class="right inline">Marital status:</label>
+        </div>
+        <div class="large-12 columns radioGroup">
+
+          <input type="radio" name="maritalStatus" value="Single" id="single" ng-model="personalCtrl.user.maritalStatus"><label for="single">Single</label>
+          <input type="radio" name="maritalStatus" value="Married" id="married" ng-model="personalCtrl.user.maritalStatus"><label for="married">Married</label>
+          <input type="radio" name="maritalStatus" value="Divorced" id="divorced" ng-model="personalCtrl.user.maritalStatus"><label for="divorced">Divorced</label>
+          <input type="radio" name="maritalStatus" value="Widow" id="widow" ng-model="personalCtrl.user.maritalStatus"><label for="widow">Widow</label>
+
+          <div class="error-class"><div class="error-content"></div></div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="large-4 columns">
+          <label for="right-label" class="right inline">Education:</label>
+        </div>
+        <div class="large-12 columns left">
+          <select id="education" class="input" name="education" data-val="userQualification" ng-model="personalCtrl.user.educationId" ng-options="education.educationId as education.qualification for education in educationOptions">
+            <option value="">Select Education</option>
+          </select>
+          <div class="error-class"><div class="error-content"></div></div>
+        </div>
+      </div>
+      
+      <div class="row" ng-show="personalCtrl.showImage">
+        <div class="large-4 columns">
+          <label for="right-label" class="right inline">Upload Photo:</label>
+        </div>
+        <div class="large-12 columns left">
+          <input type="file" id="profilePhoto" name="photograph">
+          <div>
+            <input class="form-control mock-input" type="text" disabled="" style="background-color:#fff; width:40%">
+            <span class="group-span-filestyle input-group-btn mock-browse" tabindex="0">
+            <label class="btn btn-default " for="filestyle-1">Browse</label>
+            </span>
+          </div>
+          <div class="error-class"><div class="error-content"></div></div>
+        </div>
+        <label>Maximum file size is 1MB</label>
+      </div>
+      
+      <div class="row">
+        <div class="large-4 columns">&nbsp;
+        </div>
+        <div class="large-12 columns left">
+          <button id="submitPersonalInfo" class="radius small button submit left">Save & Continue</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</form>

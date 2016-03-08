@@ -1,0 +1,122 @@
+<form name="family" id="familyRegistrationForm" ng-submit="familyCtrl.save()">
+	<div class="row rightContent"> 
+		<div class="large-16 columns formContent"> 	
+			<div class="row">       
+				<div class="large-4 columns">
+				  <label for="right-label" class="right inline">Spouse Name:</label>
+				</div>
+				<div class="large-4 columns left">
+				  <input type="text" id="spouseFirstName" name="spouseFirstName" data-val="spouseFirstName" class="name" ng-model="familyCtrl.user.spouse.firstName" placeholder="First Name">
+				</div>
+				<div class="large-3 columns left">
+				  <input type="text" id="spouseMiddleName" class="name" ng-model="familyCtrl.user.spouse.middleName" placeholder="Middle Name" >
+				</div>
+				<div class="large-4 columns left">
+				  <input type="text" id="spouseLastName" class="name" data-val="spouseLastName" ng-model="familyCtrl.user.spouse.lastName" placeholder="Last Name">
+				</div>
+				<div class="error-class"><div class="error-content"></div></div>		  
+			</div>			
+			<div class="row">
+				<div class="large-4 columns">
+				  <label for="right-label" class="right inline">Marriage Date:</label>
+				</div>
+				<div class="large-12 columns left">					
+					<input type="text" id="marriageDate" class="input" name="marriageDate" data-val="marriageDate" ng-model="familyCtrl.user.spouse.marriageDate" dob="familyCtrl.user.spouse.marriageDate">				  
+					<div class="error-class"><div class="error-content"></div></div>
+				</div>						  
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Gender:</label>
+				</div>
+				<div class="large-12 columns left radioGroup">
+					<input type="radio" name="gender" value="M" id="male" ng-model="familyCtrl.user.spouse.gender"><label for="male">Male</label>
+					<input type="radio" name="gender" value="F" id="female" ng-model="familyCtrl.user.spouse.gender"><label for="female">Female</label>
+					<input type="radio" name="gender" value="O" id="notToDisclose" ng-model="familyCtrl.user.spouse.gender"><label for="notToDisclose">Not to be disclosed</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Date of Birth:</label>
+				</div>
+				<div class="large-12 columns left">
+					<input type="text" id="dob" name="dob" ng-model="familyCtrl.user.spouse.dateOfBirth" class="input" dob="familyCtrl.user.spouse.dateOfBirth">
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Education:</label>
+				</div>
+				<div class="large-12 columns left">					
+					<select id="education" class="input" name="education" data-val="spouseEducation" ng-model="familyCtrl.user.spouse.educationId" ng-options="education.educationId as education.qualification for education in educationOptions">
+						<option value="">Select Education</option>
+					</select>
+					<div class="error-class"><div class="error-content"></div></div>
+				</div>
+			</div>
+			<h6>Children Details </h6>	
+			<div class="row">       
+				<div class="large-4 columns">
+				  <label for="right-label" class="right inline">Child Name:</label>
+				</div>
+				<div class="large-4 columns left">
+				  <input type="text" id="childFirstName" class="name" ng-model="familyCtrl.user.child.firstName" placeholder="First Name">
+				</div>
+				<div class="large-3 columns left">
+				  <input type="text" id="childMiddleName" class="name" ng-model="familyCtrl.user.child.middleName" placeholder="Middle Name" >
+				</div>
+				<div class="large-4 columns left">
+				  <input type="text" id="childLastName" class="name" ng-model="familyCtrl.user.child.lastName" placeholder="Last Name">
+				</div>
+				<div class="error-class"><div class="error-content"></div></div>		  
+			</div>			
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Gender:</label>
+				</div>
+				<div class="large-12 columns left radioGroup">
+					<input type="radio" name="gender" value="M" id="male" ng-model="familyCtrl.user.child.gender"><label for="male">Male</label>
+					<input type="radio" name="gender" value="F" id="female" ng-model="familyCtrl.user.child.gender"><label for="female">Female</label>
+					<input type="radio" name="gender" value="O" id="notToDisclose" ng-model="familyCtrl.user.child.gender"><label for="notToDisclose">Not to be disclosed</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Date of Birth:</label>
+				</div>
+				<div class="large-12 columns left">
+					<input type="text" id="childDob" name="childDob" ng-model="familyCtrl.user.child.dateOfBirth" class="input" dob="familyCtrl.user.child.dateOfBirth">
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Education:</label>
+				</div>
+				<div class="large-12 columns left">
+					<select id="education" class="input" name="education" data-val="childEducation" ng-model="familyCtrl.user.child.educationId" ng-options="education.educationId as education.qualification for education in educationOptions">
+						<option value="">Select Education</option>
+					</select>
+					
+					<div class="error-class"><div class="error-content"></div></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+				   &nbsp;
+				</div>
+				<div class="large-12 columns left">
+					<a href="#" class="link">Add another Child</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+				</div>
+				<div class="large-12 columns">
+					<button class="radius small button submit">Save & Continue</button>
+					<button class="radius small button cancel" href="#">Back</button>
+				</div>
+			</div>				
+		</div>
+	</div>
+</form>
+   

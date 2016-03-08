@@ -1,0 +1,79 @@
+<form name="volunteer" id="volunteerRegistrationForm" ng-submit="volunteerCtrl.save()">
+	<div class="row rightContent"> 
+		<div class="large-16 columns formContent"> 
+			
+			<div class="row">
+				<div class="large-4 columns">
+					<label for="right-label" class="right inline">Volunteer ID#:</label>
+				</div>
+				<div class="large-12 columns left">
+					<input type="text" id="volunteerCodeNumber" class="input" name="volunteerCodeNumber" data-val="volunteerId" ng-model="volunteerCtrl.user.volunteer.volunteerCodeNumber">
+					<div class="error-class"><div class="error-content"></div></div>
+				</div>
+				
+			</div>				
+			<div class="row bottom-space">
+				<div class="large-4 columns">
+					<label for="left-label" class="right">Are you interested in Volunteer work:</label>
+				</div>
+				<div class="large-12 columns">
+					<input type="radio" name="interested" value="1" ng-model="volunteerCtrl.user.interestedAsVolunteer" id="interestedYes"><label for="interestedYes">Yes</label>
+					<input type="radio" name="interested" value="0" ng-model="volunteerCtrl.user.interestedAsVolunteer" id="interestedNo"><label for="interestedNo">No</label>
+				</div>
+			</div>       
+			<div class="row">
+				<div class="large-4 columns">
+					<label class="right">Which areas are you interested to Volunteer:</label>
+				</div>                    
+				<div class="large-12 columns right">
+					<select id="areaOfInterest" class="input" name="areaOfInterest" ng-model="volunteerCtrl.user.volunteerInterestedAreas.interestId" data-val="areaOfInterest" ng-options="areaOfInterest.interestId as areaOfInterest.volInterestAreaName for areaOfInterest in interestedAreasOptions">
+						<option value="">Select Area of Interest</option>						
+					</select>
+					<div class="error-class"><div class="error-content"></div></div>
+				</div>
+				
+			</div>	
+			<div class="row">
+				<div class="large-4 columns">
+					<label class="right inline">Volunteer Category:</label>
+				</div>                    
+				<div class="large-12 columns right">
+					<select id="volunteerCategory" class="input" name="volunteerCategory" ng-model="volunteerCtrl.user.volunteer.volunteerCategoryId" ng-options="volunteerCategory.voluteerCatergoryId as volunteerCategory.volunteerCategoryName for volunteerCategory in volunteerCategoryOptions">
+						<option value="">Select Volunteer Category</option>						
+					</select>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+					<label class="right inline">Lead Id:</label>
+				</div>                    
+				<div class="large-12 columns right">
+					<select id="leadId" class="input" name="leadId" ng-model="volunteerCtrl.user.volunteer.volunteerLeadId"  ng-options="lead.citizenId as lead.firstName for lead in leadOptions">
+						<option value="">Select Area of Interest</option>						
+					</select>					
+				</div>				
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+					<label class="right inline">Performance Grade:</label>
+				</div>                    
+				<div class="large-12 columns right">
+					<select id="grade" class="input" name="grade" ng-model="volunteerCtrl.user.volunteer.performanceGradeId"  ng-options="grade.gradeId as grade.gradeDescription for grade in performanceGradeOptions">
+						<option value="">Select Performance Grade</option>						
+					</select>					
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+				</div>
+				<div class="large-12 columns">
+					<button class="radius small button submit left">Save & Continue</button>					
+					<button class="radius small button cancel" href="#">Back</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+	   

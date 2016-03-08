@@ -1,0 +1,91 @@
+<div class="search-filter">
+  <div class="row filter-wrapper">
+    <div class="large-8 small-16 columns padding-none actions">
+      
+      <span class="add" ng-click="listCtrl.createNewUser()">Add Member</span> | 
+      
+
+      <span class="edit {{listCtrl.disableEdit}}" ng-click="listCtrl.editCurrentUser()">Edit</span> | 
+      
+      <span  ng-click="listCtrl.confirmDelete()" class="delete">Delete</span>
+    </div>
+    <div class="large-6 small-11 columns padding-none">
+      <input type="text" class="search" ng-model="listCtrl.searchQ" placeholder="Search" />
+      <input type="button" value=" " ng-click="listCtrl.search()" class="search-btn" />
+    </div>
+    <div class="large-2 small-5 columns padding-none">
+      <input type="button" value="Advance Search" class="adv-search" ng-click="listCtrl.showFilter()" />
+    </div>
+  </div>
+</div>
+<div class="row filter-options cssSlideUp" ng-show="listCtrl.filter" >
+  <span class="arrow"></span>
+  <div class="large-16 columns selected" ng-show="listCtrl.selectedFilter.length > 0">Selected
+    <a href="javascript:void(0);" ng-click='type.filterObj()' ng-repeat="(key, type) in listCtrl.selectedFilter">{{type.filterName}} X</a>
+  </div>
+  <div class="large-16 columns padding-none filterContainer">
+    <div class="large-3 small-7 columns options">
+      <span>Type</span>
+      <ul>
+        
+        <li class="padding-none" ng-repeat="userType in listCtrl.userTypes">
+          <input type="checkbox" ng-model="listCtrl.selectedUserTypes[userType.appRoleId]" value="{{userType.appRoleId}}" />
+          {{userType.appRoleName}}
+        </li>
+        
+      </ul>
+    </div>
+    <div> </div>
+    <div class="large-3 small-7 columns options">
+      <span>Gender</span>
+      <ul>
+        <li><input type="checkbox" ng-model="listCtrl.selectedGender['M']" /> Male</li>
+        <li><input type="checkbox" ng-model="listCtrl.selectedGender['F']" /> Female</li>
+      </ul>
+    </div>
+    <div class="large-5 small-16 columns options age">
+      <ul>
+        <li><span>Age :</span>		
+        <input class="age" ng-model="listCtrl.minAge" type="text" /> To
+        <input type="text" class="age" ng-model="listCtrl.maxAge" />
+      </li>     
+     
+    </ul>
+  </div>
+  <div class="large-5 small-16 columns options age">
+     <ul>
+      <li>
+        <button class="radius tiny button submit" ng-click="listCtrl.filterSearch()">Search</button>
+		<button class="radius tiny button cancel" ng-click="listCtrl.resetSerach()">Reset</button>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+<div class="row tiles-list">
+<div class="large-16 columns padding-none">
+  <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-6">
+    
+    <li class="padding-none" ng-repeat="user in listCtrl.userList track by $index">
+      <div class="tiles">
+        <div>
+          <a href="#/user/view/{{user.citizenId}}" class="photo2"><img ng-show="user.photo" src="{{user.photo}}"></a>
+        </div>
+        <div class="details">
+          <h6>{{user.firstName}} {{user.lastName}}</h6>
+          <label>{{user.age}} / {{ listCtrl.getGender(user.gender) }}  <a href="mailto:{{user.email}}"><img ng-src="images/email-icon-act.png" alt="email" class="social-icons" /></a><a href="#"><img ng-src="images/skype-icon-act.png" alt="skype" /></a></label>
+          <label class="mobile-node"><img src="images/phone-icon-act.png" alt="phone" class="social-icons" /> {{user.mobileNumber}}</label>
+          <label>{{user.regionName}}</label>
+        </div>
+        <div class="status">
+          <input type="checkbox" ng-click="listCtrl.enableDisableOption()" ng-model="listCtrl.selectedUsers[user.citizenId]" />
+          <span class="right" >
+            <label class="{{role | lowercase}}" ng-repeat="role in user.roles track by $index"></label>
+          </span>
+          
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>

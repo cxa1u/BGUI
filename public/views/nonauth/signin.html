@@ -1,0 +1,86 @@
+<div class="row registration-wrapper">
+   <!-- Signin Section -->
+   
+   <div class="large-10 columns"><img src="http://placehold.it/500x250"></div>
+
+
+   <div class="large-6 medium-7 small-16 columns padding-none">
+      <form ng-submit = "signinCtrl.signin()" name="login">
+         <h1>Sign In
+            <span>If you are already a member.</span>
+         </h1>
+         <div class="row">
+            <div class="large-4 small-16 columns padding-none">
+               <label class="inline right">User Name:</label>
+            </div>
+            <div class="large-12 small-16 columns">
+               <input type="text" name="username" ng-model="signinCtrl.user.username" />
+            </div>
+         </div>
+         <div class="row">
+            <div class="large-4 small-16 columns padding-none">
+               <label class="inline right" name="password" >Password:</label>
+            </div>
+            <div class="large-12 small-16 columns">
+               <input type="password" name="password" value=""  ng-model="signinCtrl.user.password"  id="inputPassword"/>
+               <div class="large-16 small-16"><input type="checkbox" /> Remember me</div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="large-4
+               small-16 columns"></div>
+            <div class="large-12 small-16 columns
+               button-wrapper">             
+               <input type="submit" class="button small radius"
+               value="Sign In"/> <a href="forgotpswd" class="right forgot-password">Forgot
+               Password?</a>
+            </div>
+         </div>
+      </form>
+   </div>
+  <!--  <div class="large-2 medium-2 small-16 columns or">
+      <img src="images/or.png" alt="or" />
+   </div>
+   Register Section 
+   <div class="large-8 medium-7 small-16 columns padding-none">
+      <h1>Register <span>to become a member.</h1>
+      <div class="row">
+         <div class="large-6 columns">
+            <label class="right inline">Name:</label>
+         </div>
+         <div class="large-4 columns">
+            <input type="text" placeholder="First" class="name required"  />
+         </div>
+         <div class="large-2 columns padding-none">
+            <input type="text" placeholder="" class="" />
+         </div>
+         <div class="large-4 columns">
+            <input type="text" placeholder="Last" class="name required" />
+         </div>
+      </div>
+      <div class="row">
+         <div class="large-6 small-16 columns"><label class="inline right">User Name:</label></div>
+         <div class="large-10 small-16 columns"><input type="text" class="required" /></div>
+      </div>
+      <div class="row">
+         <div class="large-6 small-16 columns"><label class="inline right">Date of Birth:</label></div>
+         <div class="large-10 small-16 columns"><input type="password" class="required" /></div>
+      </div>
+      <div class="row">
+         <div class="large-6 small-16 columns"><label class="inline right">Mobile Number:</label></div>
+         <div class="large-10 small-16 columns"><input type="password" class="required" /></div>
+      </div>
+      <div class="row">
+         <div class="large-6 small-16 columns"><label class="inline right">Email Address:</label></div>
+         <div class="large-10 small-16 columns"><input type="text" /></div>
+      </div>
+      <div class="row">
+         <div class="large-6 small-16 columns"><label class="right">Gender:</label></div>
+         <div class="large-10 small-16 columns gender"><label><input type="radio" /> Male </label><label><input type="radio" /> Female </label> <label><input type="radio" /> Not to disclose</label></div>
+      </div>
+      <div class="row">
+         <div class="large-6 small-16 columns"></div>
+         <div class="large-10 small-16 columns button-wrapper"><a href="postrequest"><input type="button" class="button small radius" value="Register" /></a></div>
+      </div>
+   </div> -->
+</div>
