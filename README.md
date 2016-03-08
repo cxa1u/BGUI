@@ -1,4 +1,4 @@
-# UFass
+# BG-UI
 
 ## Build & development
 
