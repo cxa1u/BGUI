@@ -8,7 +8,7 @@
  * Controller of the ufaasApp
  */
 angular.module('ufaasApp')
-  .controller('MainCtrl', function () {
+  .controller('HomeCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
