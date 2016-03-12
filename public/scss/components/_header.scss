@@ -1,0 +1,41 @@
+//@for top sticky header
+
+.top-fixed-header {
+    background-color: #120f16;
+
+    .top-q-link {
+        min-height: 60px;
+
+
+        .top-q-link-inner {
+        	@include reset;
+            color : $brand-textColor-white;
+            font-family: "TeXGyreReg";
+            font-size: 2.4rem;
+            width: 100%;
+            text-align: center;
+            @include vertical-center;
+
+
+        }
+        button.top-q-link-inner {
+        	
+        	font-size: 1.5rem;
+		    height: 30px;
+    		width: 80%;	
+    		border-radius: 0;
+    		border: 0;
+    		left: 50%;
+    		transform: translate(-50%, -50%);
+            background: rgba(222,75,42,1);
+            background: -moz-linear-gradient(left, rgba(222,75,42,1) 0%, rgba(243,124,55,1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(222,75,42,1)), color-stop(100%, rgba(243,124,55,1)));
+            background: -webkit-linear-gradient(left, rgba(222,75,42,1) 0%, rgba(243,124,55,1) 100%);
+            background: -o-linear-gradient(left, rgba(222,75,42,1) 0%, rgba(243,124,55,1) 100%);
+            background: -ms-linear-gradient(left, rgba(222,75,42,1) 0%, rgba(243,124,55,1) 100%);
+            background: linear-gradient(to right, rgba(222,75,42,1) 0%, rgba(243,124,55,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4b2a', endColorstr='#f37c37', GradientType=1 );
+
+        }
+    }	
+}

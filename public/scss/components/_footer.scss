@@ -1,0 +1,54 @@
+#appFooter {
+   left:0px;
+   bottom:0px;
+   min-height:180px;
+   width:100%;
+   background:#fff;
+}
+
+#appSection {
+	height: calc(100% - 300px);
+	width: 100%;
+}
+
+html, body{
+	height: 100%;
+}
+
+.footer-top-area {
+    background-color: #FFFEFF;
+}
+
+.footer-menu {
+	margin-top: 2rem;
+    
+    .footer-menu-link {
+        padding: 0;
+        height: 40px;
+        text-align: center;
+
+        &:last-child a {
+            border-right: 0;
+        }
+
+        a {
+        font-size: 2.4rem;
+        color: #120f16;
+        border-right: solid 2px #120f16;
+        padding: 0;
+    	}
+    }
+    @include reset-row-column;
+    .footer-submenu-link {
+    	width: 18%;
+    	text-align: center;
+    	&:first-child {
+    		margin-left: 7%;
+    	}
+    }   
+}
+
+.footer-social-menu {
+	margin-top: 3rem;
+	padding-left: 10rem;
+}

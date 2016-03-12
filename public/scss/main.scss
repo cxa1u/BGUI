@@ -1,7 +1,22 @@
 $icon-font-path: "../fonts/bootstrap/";
 // bower:scss
+
+
+
+
+// Theme settings
+@import "themes/fxs-one";
+
+// Utils
+
+@import "util-mixins/vertical-center";
+
+
 @import "_bootstrap.scss";
 // endbower
+
+
+
 
 .browsehappy {
   margin: 0.2em 0;
@@ -86,3 +101,10 @@ body {
     border-bottom: 0;
   }
 }
+
+
+@import "util-mixins/base-common";
+@import "components/header";
+@import "components/footer";
+@import "components/home";
+

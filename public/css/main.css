@@ -1,4 +1,1643 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'TeXGyreReg';
+  src: url("../fonts/texgyreadventor-regular.otf");
+}
+@font-face {
+  font-family: 'TeXGyreBold';
+  src: url("../fonts/texgyreadventor-bold.otf");
+}
+/* line 906, ../scss/themes/_fxs-one.scss */
+.floatleft {
+  float: left;
+}
+
+/* line 907, ../scss/themes/_fxs-one.scss */
+.floatright {
+  float: right;
+}
+
+/* line 908, ../scss/themes/_fxs-one.scss */
+.alignleft {
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 912, ../scss/themes/_fxs-one.scss */
+.alignright {
+  float: right;
+  margin-left: 15px;
+}
+
+/* line 916, ../scss/themes/_fxs-one.scss */
+.aligncenter {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+/* line 920, ../scss/themes/_fxs-one.scss */
+a:focus {
+  outline: 0px solid;
+}
+
+/* line 921, ../scss/themes/_fxs-one.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 925, ../scss/themes/_fxs-one.scss */
+.fix {
+  overflow: hidden;
+}
+
+/* line 926, ../scss/themes/_fxs-one.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px;
+}
+
+/* line 934, ../scss/themes/_fxs-one.scss */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 938, ../scss/themes/_fxs-one.scss */
+.header-area {
+  background: none repeat scroll 0 0 #f4f4f4;
+}
+
+/* line 941, ../scss/themes/_fxs-one.scss */
+.header-area a {
+  color: #888;
+}
+
+/* line 944, ../scss/themes/_fxs-one.scss */
+.user-menu ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 949, ../scss/themes/_fxs-one.scss */
+.user-menu li {
+  display: inline-block;
+}
+
+/* line 952, ../scss/themes/_fxs-one.scss */
+.user-menu li a {
+  display: block;
+  font-size: 13px;
+  margin-right: 5px;
+  padding: 10px;
+}
+
+/* line 958, ../scss/themes/_fxs-one.scss */
+.user-menu li a i.fa {
+  margin-right: 5px;
+}
+
+/* line 961, ../scss/themes/_fxs-one.scss */
+.header-right ul.list-inline {
+  margin: 0;
+  text-align: right;
+}
+
+/* line 965, ../scss/themes/_fxs-one.scss */
+.header-right ul.list-inline li a {
+  display: block;
+  padding: 9px;
+}
+
+/* line 969, ../scss/themes/_fxs-one.scss */
+.header-right ul.list-inline li ul a {
+  padding: 5px 15px;
+}
+
+/* line 972, ../scss/themes/_fxs-one.scss */
+.header-right ul.list-inline li ul {
+  border: medium none;
+  border-radius: 0;
+  left: 50%;
+  margin-left: -50px;
+  min-width: 100px;
+  text-align: center;
+}
+
+/* line 981, ../scss/themes/_fxs-one.scss */
+.mainmenu-area {
+  background: none repeat scroll 0 0 #fbfbfb;
+  font-family: "Roboto Condensed",sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 999;
+}
+
+/* line 989, ../scss/themes/_fxs-one.scss */
+.logo h1 {
+  font-size: 40px;
+  margin: 30px 0;
+  font-weight: 400;
+}
+
+/* line 993, ../scss/themes/_fxs-one.scss */
+.logo h1 a {
+  color: #999;
+}
+
+/* line 996, ../scss/themes/_fxs-one.scss */
+.logo h1 a:hover {
+  text-decoration: none;
+  opacity: .7;
+}
+
+/* line 997, ../scss/themes/_fxs-one.scss */
+.logo h1 a span {
+  color: #5a88ca;
+}
+
+/* line 1000, ../scss/themes/_fxs-one.scss */
+.shopping-item {
+  border: 1px solid #ddd;
+  float: right;
+  font-size: 18px;
+  margin-top: 40px;
+  padding: 10px;
+  position: relative;
+}
+
+/* line 1008, ../scss/themes/_fxs-one.scss */
+.shopping-item a {
+  color: #666;
+}
+
+/* line 1011, ../scss/themes/_fxs-one.scss */
+.cart-amunt {
+  color: #5a88ca;
+  font-weight: 700;
+}
+
+/* line 1015, ../scss/themes/_fxs-one.scss */
+.product-count {
+  background: none repeat scroll 0 0 #5a88ca;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 10px;
+  height: 20px;
+  padding-top: 2px;
+  position: absolute;
+  right: -10px;
+  text-align: center;
+  top: -10px;
+  width: 20px;
+}
+
+/* line 1029, ../scss/themes/_fxs-one.scss */
+.shopping-item i.fa {
+  margin-left: 15px;
+}
+
+/* line 1034, ../scss/themes/_fxs-one.scss */
+.shopping-item:hover {
+  background: none repeat scroll 0 0 #5a88ca;
+  border-color: #5a88ca;
+}
+
+/* line 1038, ../scss/themes/_fxs-one.scss */
+.shopping-item:hover a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 1041, ../scss/themes/_fxs-one.scss */
+.shopping-item:hover .cart-amunt {
+  color: #fff;
+}
+
+/* line 1044, ../scss/themes/_fxs-one.scss */
+.shopping-item:hover .product-count {
+  background: none repeat scroll 0 0 #000;
+}
+
+/* line 1049, ../scss/themes/_fxs-one.scss */
+.mainmenu-area ul.navbar-nav li a {
+  color: #6e6a6a;
+  font-size: 14px;
+  padding: 20px;
+}
+
+/* line 1055, ../scss/themes/_fxs-one.scss */
+.mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {
+  background: #5a88ca;
+  color: #FFF;
+}
+
+/* line 1056, ../scss/themes/_fxs-one.scss */
+.mainmenu-area .nav > li > a:focus {
+  color: #FFF;
+}
+
+/* line 1058, ../scss/themes/_fxs-one.scss */
+.slider-area {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+/*-------------------------
+[9. Block slider]
+---------------------------*/
+/* line 1062, ../scss/themes/_fxs-one.scss */
+.block-slider {
+  border: none;
+  width: 100%;
+}
+
+/* line 1066, ../scss/themes/_fxs-one.scss */
+.block-slider ul li {
+  list-style: none;
+}
+
+/* line 1069, ../scss/themes/_fxs-one.scss */
+.block-slider .bx-pager {
+  display: none;
+}
+
+/* line 1072, ../scss/themes/_fxs-one.scss */
+.block-slider .bx-prev,
+.block-slider .bx-next {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  line-height: 29px;
+  -moz-transition: all 0.45s ease;
+  -webkit-transition: all 0.45s ease;
+  -o-transition: all 0.45s ease;
+  -ms-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+/* line 1093, ../scss/themes/_fxs-one.scss */
+.block-slider img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 1097, ../scss/themes/_fxs-one.scss */
+.block-slider .bx-prev {
+  left: 0px;
+  padding-right: 3px;
+}
+
+/* line 1101, ../scss/themes/_fxs-one.scss */
+.block-slider .bx-next {
+  right: 0px;
+  padding-left: 3px;
+}
+
+/* line 1105, ../scss/themes/_fxs-one.scss */
+.block-slider:hover .bx-prev {
+  left: 10px;
+}
+
+/* line 1108, ../scss/themes/_fxs-one.scss */
+.block-slider:hover .bx-next {
+  right: 10px;
+}
+
+/* line 1111, ../scss/themes/_fxs-one.scss */
+.block-slider .bx-prev:hover,
+.block-slider .bx-next:hover {
+  background: #5a88ca;
+  color: #fff;
+  border-color: #5a88ca;
+}
+
+/*------------------
+[4. Slidershow]
+------------------*/
+/* line 1122, ../scss/themes/_fxs-one.scss */
+.block-slider .bx-pager {
+  display: block;
+  text-align: center;
+}
+
+/* line 1126, ../scss/themes/_fxs-one.scss */
+.block-slider .bx-pager-item {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  font-size: 0;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+/* line 1135, ../scss/themes/_fxs-one.scss */
+.block-slider .bx-pager-item a {
+  width: 100%;
+  height: 100%;
+  background: #999;
+  display: block;
+  border-radius: 50%;
+}
+
+/* line 1142, ../scss/themes/_fxs-one.scss */
+.block-slider .bx-pager-item a.active {
+  background: #1bd172;
+}
+
+/* line 1145, ../scss/themes/_fxs-one.scss */
+.block-slider .caption-group {
+  position: absolute;
+  top: 26%;
+  right: 16%;
+}
+
+/* line 1150, ../scss/themes/_fxs-one.scss */
+.block-slider .caption-group .title {
+  margin: 0;
+}
+
+/* line 1153, ../scss/themes/_fxs-one.scss */
+.block-slider .caption-group .subtitle {
+  margin: 0;
+  margin-top: 5px;
+}
+
+/* line 1157, ../scss/themes/_fxs-one.scss */
+.block-slider .caption-group .button-radius {
+  margin-top: 27px;
+}
+
+/* line 1160, ../scss/themes/_fxs-one.scss */
+.block-slider .caption-group .primary {
+  color: #1bd172;
+}
+
+/*----------------------
+[10. Block top seller ]
+------------------------*/
+/* line 1170, ../scss/themes/_fxs-one.scss */
+.button-radius {
+  position: relative;
+  border: 1px solid #eaeaea;
+  padding: 1px;
+  min-height: 34px;
+  background: #fff;
+  display: inline-block;
+  width: auto;
+  line-height: 30px;
+  padding-left: 40px;
+  padding-right: 20px;
+  margin: 0;
+  color: #666666;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  border-radius: 17px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* line 1194, ../scss/themes/_fxs-one.scss */
+.button-radius .icon {
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  position: absolute;
+  left: 2%;
+  top: 2px;
+  overflow: hidden;
+}
+
+/* line 1206, ../scss/themes/_fxs-one.scss */
+.button-radius .icon:before {
+  font-family: 'FontAwesome';
+  content: "\f105";
+  font-size: 14px;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  background-color: #5a88ca;
+  border-radius: 90%;
+  text-align: center;
+  line-height: 26px;
+  float: left;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+/* line 1225, ../scss/themes/_fxs-one.scss */
+.button-radius.white {
+  border-color: #fff;
+  color: #fff;
+  background: transparent;
+}
+
+/* line 1230, ../scss/themes/_fxs-one.scss */
+.button-radius.white .icon:before {
+  background: #fff;
+  color: #333;
+}
+
+/* line 1235, ../scss/themes/_fxs-one.scss */
+.button-radius:hover .icon {
+  left: 100%;
+  margin-left: -30px;
+}
+
+/* line 1239, ../scss/themes/_fxs-one.scss */
+.button-radius:hover {
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+/* line 1244, ../scss/themes/_fxs-one.scss */
+.promo-area {
+  background: #fbfbfb;
+  color: #fff;
+  padding: 40px 0 40px;
+}
+
+/* line 1250, ../scss/themes/_fxs-one.scss */
+.brands-area {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  color: #fff;
+  padding: 20px 0 20px;
+}
+
+/* line 1257, ../scss/themes/_fxs-one.scss */
+.promo-area .zigzag-bottom, .brands-area .zigzag-bottom {
+  background: #f4f4f4;
+}
+
+/* line 1258, ../scss/themes/_fxs-one.scss */
+.single-promo {
+  font-size: 25px;
+  font-weight: 200;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+/* line 1264, ../scss/themes/_fxs-one.scss */
+.single-promo i {
+  font-size: 50px;
+}
+
+/* line 1268, ../scss/themes/_fxs-one.scss */
+.single-promo:hover {
+  color: #fff;
+  background: #222;
+}
+
+/* line 1269, ../scss/themes/_fxs-one.scss */
+.promo1 {
+  background: #5a88ca;
+}
+
+/* line 1270, ../scss/themes/_fxs-one.scss */
+.promo2 {
+  background: #ffd900;
+}
+
+/* line 1271, ../scss/themes/_fxs-one.scss */
+.promo3 {
+  background: #fa8072;
+}
+
+/* line 1272, ../scss/themes/_fxs-one.scss */
+.promo4 {
+  background: #4abebd;
+}
+
+/* line 1273, ../scss/themes/_fxs-one.scss */
+.section-title {
+  font-family: "Raleway",sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* line 1282, ../scss/themes/_fxs-one.scss */
+.product-f-image {
+  position: relative;
+}
+
+/* line 1285, ../scss/themes/_fxs-one.scss */
+.product-hover {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+/* line 1292, ../scss/themes/_fxs-one.scss */
+.product-hover:after {
+  background: none repeat scroll 0 0 #000;
+  content: "";
+  height: 100%;
+  left: -100%;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: .4s;
+}
+
+/* line 1302, ../scss/themes/_fxs-one.scss */
+.product-hover a {
+  background: none repeat scroll 0 0 #5a88ca;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  left: 10%;
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #5a88ca;
+  width: 80%;
+  z-index: 99;
+  transition: .4s;
+}
+
+/* line 1317, ../scss/themes/_fxs-one.scss */
+.product-hover a:hover {
+  background: #000;
+  text-decoration: none;
+  border-color: #444;
+}
+
+/* line 1321, ../scss/themes/_fxs-one.scss */
+.product-carousel-price ins {
+  color: #5a88ca;
+  font-weight: 700;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+/* line 1327, ../scss/themes/_fxs-one.scss */
+.product-hover a i.fa {
+  margin-right: 5px;
+}
+
+/* line 1330, ../scss/themes/_fxs-one.scss */
+.product-hover a.add-to-cart-link {
+  top: -25%;
+}
+
+/* line 1331, ../scss/themes/_fxs-one.scss */
+.product-hover a.view-details-link {
+  bottom: -25%;
+}
+
+/* line 1332, ../scss/themes/_fxs-one.scss */
+.single-product h2 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+/* line 1340, ../scss/themes/_fxs-one.scss */
+.single-product h2 a {
+  color: #222;
+}
+
+/* line 1343, ../scss/themes/_fxs-one.scss */
+.single-product p {
+  color: #5a88ca;
+  font-weight: 700;
+}
+
+/* line 1348, ../scss/themes/_fxs-one.scss */
+.single-product {
+  overflow: hidden;
+}
+
+/* line 1352, ../scss/themes/_fxs-one.scss */
+.single-product:hover .product-hover a.add-to-cart-link {
+  top: 32%;
+}
+
+/* line 1353, ../scss/themes/_fxs-one.scss */
+.single-product:hover .product-hover a.view-details-link {
+  bottom: 32%;
+}
+
+/* line 1354, ../scss/themes/_fxs-one.scss */
+.single-product:hover .product-hover:after {
+  left: 0;
+}
+
+/* line 1357, ../scss/themes/_fxs-one.scss */
+.product-carousel {
+  padding-top: 40px;
+}
+
+/* line 1360, ../scss/themes/_fxs-one.scss */
+.latest-product .owl-nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 1366, ../scss/themes/_fxs-one.scss */
+.latest-product .owl-nav div, .related-products-wrapper .owl-nav div {
+  background: #fa8072;
+  color: #FFF;
+  display: inline-block;
+  margin-left: 15px;
+  padding: 1px 10px;
+}
+
+/* line 1373, ../scss/themes/_fxs-one.scss */
+.latest-product .owl-nav div:hover, .brand-wrapper .owl-nav div:hover, .related-products-wrapper .owl-nav div:hover {
+  color: #FFF;
+  background: #f95f5f;
+}
+
+/* line 1374, ../scss/themes/_fxs-one.scss */
+.brand-list {
+  padding-top: 40px;
+}
+
+/* line 1375, ../scss/themes/_fxs-one.scss */
+.brand-list .owl-nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 1380, ../scss/themes/_fxs-one.scss */
+.brand-wrapper .owl-nav div {
+  border: 1px solid #fff;
+  color: #fff;
+  display: inline-block;
+  margin-left: 15px;
+  padding: 1px 10px;
+}
+
+/* line 1388, ../scss/themes/_fxs-one.scss */
+.brand-wrapper .owl-nav div {
+  background: #fa8072;
+  color: #FFF;
+  display: inline-block;
+  margin-left: 15px;
+  padding: 1px 10px;
+}
+
+/* line 1396, ../scss/themes/_fxs-one.scss */
+.maincontent-area {
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+/* line 1398, ../scss/themes/_fxs-one.scss */
+.product-wid-title {
+  font-family: raleway;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+
+/* line 1406, ../scss/themes/_fxs-one.scss */
+.single-wid-product {
+  margin-bottom: 31px;
+  overflow: hidden;
+}
+
+/* line 1410, ../scss/themes/_fxs-one.scss */
+.product-thumb {
+  float: left;
+  height: 90px;
+  margin-right: 15px;
+  width: 100px;
+}
+
+/* line 1416, ../scss/themes/_fxs-one.scss */
+.single-wid-product h2 {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* line 1420, ../scss/themes/_fxs-one.scss */
+.product-wid-rating {
+  color: #ffc808;
+  margin-bottom: 10px;
+}
+
+/* line 1424, ../scss/themes/_fxs-one.scss */
+.product-wid-price ins {
+  color: #5a88ca;
+  font-weight: 700;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+/* line 1430, ../scss/themes/_fxs-one.scss */
+.single-wid-product h2 a {
+  color: #222;
+}
+
+/* line 1433, ../scss/themes/_fxs-one.scss */
+.single-wid-product h2 a:hover, .single-product h2 a:hover {
+  color: #5a88ca;
+}
+
+/* line 1436, ../scss/themes/_fxs-one.scss */
+.wid-view-more {
+  background: none repeat scroll 0 0 #5a88ca;
+  color: #fff;
+  padding: 3px 15px;
+  position: absolute;
+  right: 10px;
+  top: 3px;
+}
+
+/* line 1444, ../scss/themes/_fxs-one.scss */
+.wid-view-more:hover {
+  color: #fff;
+  background-color: #222;
+  text-decoration: none;
+}
+
+/* line 1445, ../scss/themes/_fxs-one.scss */
+.single-product-widget {
+  position: relative;
+}
+
+/* line 1448, ../scss/themes/_fxs-one.scss */
+.product-widget-area {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+/* .product-widget-area .zigzag-bottom{background: #f4f4f4;}
+.footer-top-area .zigzag-bottom{background: #f4f4f4}
+.footer-top-area {background: none repeat scroll 0 0 #333;
+color: #999;
+padding: 35px 0 180px;}
+ */
+/* line 1459, ../scss/themes/_fxs-one.scss */
+.footer-bottom-area {
+  background: #000;
+  color: #fff;
+}
+
+/* line 1460, ../scss/themes/_fxs-one.scss */
+.footer-about-us span {
+  color: #5a88ca;
+}
+
+/* line 1463, ../scss/themes/_fxs-one.scss */
+.footer-wid-title {
+  font-family: raleway;
+  font-size: 30px;
+  font-weight: 100;
+  color: #fff;
+}
+
+/* line 1469, ../scss/themes/_fxs-one.scss */
+.footer-about-us h2 {
+  font-weight: 200;
+}
+
+/* line 1472, ../scss/themes/_fxs-one.scss */
+.footer-menu ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1477, ../scss/themes/_fxs-one.scss */
+.footer-menu ul li {
+  border-bottom: 1px dashed #555;
+  padding: 5px 0;
+}
+
+/* line 1481, ../scss/themes/_fxs-one.scss */
+.footer-menu a {
+  display: block;
+  padding: 5px 0;
+  color: #999;
+}
+
+/* line 1487, ../scss/themes/_fxs-one.scss */
+.footer-social a {
+  background: none repeat scroll 0 0 #5a88ca;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-top: 5px;
+  text-align: center;
+  width: 40px;
+  border: 1px solid #5a88ca;
+}
+
+/* line 1500, ../scss/themes/_fxs-one.scss */
+.footer-social a:hover {
+  background-color: #222;
+  border-color: #666;
+}
+
+/* line 1502, ../scss/themes/_fxs-one.scss */
+.footer-social {
+  margin-top: 20px;
+}
+
+/* line 1505, ../scss/themes/_fxs-one.scss */
+.newsletter-form input[type="email"] {
+  background: none repeat scroll 0 0 #fff;
+  border: medium none;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* line 1512, ../scss/themes/_fxs-one.scss */
+.newsletter-form input[type="submit"] {
+  background: none repeat scroll 0 0 #5a88ca;
+  border: medium none;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  border: 1px solid #5a88ca;
+}
+
+/* line 1521, ../scss/themes/_fxs-one.scss */
+.newsletter-form input[type="submit"]:hover {
+  background: #222;
+  border-color: #666;
+}
+
+/* line 1522, ../scss/themes/_fxs-one.scss */
+.newsletter-form {
+  margin-top: 25px;
+}
+
+/* line 1525, ../scss/themes/_fxs-one.scss */
+a {
+  color: #5a88ca;
+}
+
+/* line 1526, ../scss/themes/_fxs-one.scss */
+a:hover, a:focus {
+  color: #17a78b;
+}
+
+/* line 1527, ../scss/themes/_fxs-one.scss */
+.footer-bottom-area {
+  background: none repeat scroll 0 0 #000;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+/* line 1534, ../scss/themes/_fxs-one.scss */
+.slide-bulletz {
+  bottom: 30px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 99;
+}
+
+/* line 1542, ../scss/themes/_fxs-one.scss */
+ol.slide-indicators {
+  left: inherit;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+/* line 1550, ../scss/themes/_fxs-one.scss */
+ol.slide-indicators li {
+  background: none repeat scroll 0 0 #222;
+  border: medium none;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 10px;
+  margin: 0 0 0 5px;
+  width: 10px;
+}
+
+/* line 1560, ../scss/themes/_fxs-one.scss */
+ol.slide-indicators li.active {
+  background: none repeat scroll 0 0 #fff;
+  height: 10px;
+  margin: 0 0 0 5px;
+  width: 10px;
+}
+
+/* line 1568, ../scss/themes/_fxs-one.scss */
+.carousel.carousel-fade .item {
+  transition: opacity 1s ease-in-out;
+}
+
+/* line 1569, ../scss/themes/_fxs-one.scss */
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/* line 1577, ../scss/themes/_fxs-one.scss */
+.footer-card-icon {
+  font-size: 30px;
+  text-align: right;
+}
+
+/* line 1582, ../scss/themes/_fxs-one.scss */
+.copyright > p {
+  margin: 10px 0 0;
+}
+
+/* line 1586, ../scss/themes/_fxs-one.scss */
+.product-big-title-area {
+  background: url(images/crossword.png) repeat scroll 0 0 #5a88ca;
+}
+
+/* line 1588, ../scss/themes/_fxs-one.scss */
+.product-bit-title h2 {
+  font-family: raleway;
+  font-size: 50px;
+  font-weight: 200;
+  margin: 0;
+  padding: 50px 0;
+  color: #fff;
+}
+
+/* line 1596, ../scss/themes/_fxs-one.scss */
+.single-product-area .zigzag-bottom {
+  background-color: #f4f4f4;
+}
+
+/* line 1598, ../scss/themes/_fxs-one.scss */
+.single-product-area {
+  padding: 80px 0 130px;
+}
+
+/* line 1606, ../scss/themes/_fxs-one.scss */
+.sidebar-title {
+  color: #fead53;
+  font-size: 25px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* line 1612, ../scss/themes/_fxs-one.scss */
+.single-sidebar {
+  margin-bottom: 50px;
+}
+
+/* line 1615, ../scss/themes/_fxs-one.scss */
+input[type="text"], input[type="password"], input[type="email"], textarea {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* line 1619, ../scss/themes/_fxs-one.scss */
+input[type="submit"], button[type=submit] {
+  background: none repeat scroll 0 0 #5a88ca;
+  border: medium none;
+  color: #fff;
+  padding: 11px 20px;
+  text-transform: uppercase;
+}
+
+/* line 1626, ../scss/themes/_fxs-one.scss */
+input[type="submit"]:hover, button[type=submit]:hover {
+  background-color: #222;
+}
+
+/* line 1627, ../scss/themes/_fxs-one.scss */
+.single-sidebar input[type="text"] {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* line 1631, ../scss/themes/_fxs-one.scss */
+.thubmnail-recent {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+/* line 1635, ../scss/themes/_fxs-one.scss */
+.recent-thumb {
+  float: left;
+  height: auto;
+  margin-right: 15px;
+  width: 63px;
+}
+
+/* line 1641, ../scss/themes/_fxs-one.scss */
+.thubmnail-recent > h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 1645, ../scss/themes/_fxs-one.scss */
+.thubmnail-recent > h2 a {
+  color: #222;
+}
+
+/* line 1648, ../scss/themes/_fxs-one.scss */
+.product-sidebar-price > ins {
+  color: #5a88ca;
+  font-weight: 700;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+/* line 1654, ../scss/themes/_fxs-one.scss */
+.single-sidebar > ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1659, ../scss/themes/_fxs-one.scss */
+.single-sidebar li {
+  border-bottom: 1px solid #f1f1f1;
+  padding: 10px 0;
+}
+
+/* line 1663, ../scss/themes/_fxs-one.scss */
+.single-sidebar a {
+  display: block;
+}
+
+/* line 1666, ../scss/themes/_fxs-one.scss */
+.product-breadcroumb {
+  margin-bottom: 20px;
+}
+
+/* line 1669, ../scss/themes/_fxs-one.scss */
+.product-breadcroumb > a {
+  margin-right: 31px;
+  position: relative;
+}
+
+/* line 1673, ../scss/themes/_fxs-one.scss */
+.product-breadcroumb > a::before {
+  content: "/";
+  position: absolute;
+  right: -20px;
+  top: 2px;
+}
+
+/* line 1679, ../scss/themes/_fxs-one.scss */
+.product-breadcroumb > a:last-child::before {
+  display: none;
+}
+
+/* line 1682, ../scss/themes/_fxs-one.scss */
+.product-main-img {
+  margin-bottom: 20px;
+}
+
+/* line 1685, ../scss/themes/_fxs-one.scss */
+.product-gallery {
+  margin-bottom: 25px;
+  margin-left: -15px;
+  overflow: hidden;
+}
+
+/* line 1690, ../scss/themes/_fxs-one.scss */
+.product-gallery img {
+  height: auto;
+  margin-left: 15px;
+  width: 76px;
+}
+
+/* line 1695, ../scss/themes/_fxs-one.scss */
+.product-name {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+/* line 1699, ../scss/themes/_fxs-one.scss */
+.product-inner-price {
+  margin-bottom: 25px;
+}
+
+/* line 1702, ../scss/themes/_fxs-one.scss */
+.product-inner-price > ins {
+  color: #5a88ca;
+  font-weight: 700;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+/* line 1708, ../scss/themes/_fxs-one.scss */
+.quantity {
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 1712, ../scss/themes/_fxs-one.scss */
+.quantity input[type="number"] {
+  border: 1px solid #5a88ca;
+  padding: 5px;
+  width: 50px;
+}
+
+/* line 1717, ../scss/themes/_fxs-one.scss */
+.add_to_cart_button {
+  background: none repeat scroll 0 0 #5a88ca;
+  border: medium none;
+  color: #fff;
+  padding: 6px 25px;
+  display: inline-block;
+}
+
+/* line 1723, ../scss/themes/_fxs-one.scss */
+.add_to_cart_button:hover {
+  background-color: #222;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 1724, ../scss/themes/_fxs-one.scss */
+form.cart {
+  margin-bottom: 25px;
+}
+
+/* line 1727, ../scss/themes/_fxs-one.scss */
+.product-inner-category {
+  margin-bottom: 30px;
+}
+
+/* line 1730, ../scss/themes/_fxs-one.scss */
+.product-tab {
+  border-bottom: 1px solid #ddd;
+  list-style: outside none none;
+  margin: 0 0 30px;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 1737, ../scss/themes/_fxs-one.scss */
+.product-tab li {
+  display: inline-block;
+}
+
+/* line 1740, ../scss/themes/_fxs-one.scss */
+.product-tab li.active {
+  background: none repeat scroll 0 0 #5a88ca;
+}
+
+/* line 1743, ../scss/themes/_fxs-one.scss */
+.product-tab li.active a {
+  color: #fff;
+}
+
+/* line 1746, ../scss/themes/_fxs-one.scss */
+.product-tab li a {
+  color: #222;
+  display: block;
+  font-size: 16px;
+  padding: 10px 30px;
+}
+
+/* line 1752, ../scss/themes/_fxs-one.scss */
+.product-tab li a:hover {
+  text-decoration: none;
+}
+
+/* line 1755, ../scss/themes/_fxs-one.scss */
+.product-tab li a:focus {
+  text-decoration: none;
+}
+
+/* line 1758, ../scss/themes/_fxs-one.scss */
+.tab-content h2 {
+  font-size: 20px;
+}
+
+/* line 1761, ../scss/themes/_fxs-one.scss */
+.tab-content {
+  margin-bottom: 30px;
+}
+
+/* line 1764, ../scss/themes/_fxs-one.scss */
+.submit-review label {
+  display: block;
+}
+
+/* line 1767, ../scss/themes/_fxs-one.scss */
+.submit-review input[type="text"], .submit-review input[type="email"], .submit-review textarea {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* line 1771, ../scss/themes/_fxs-one.scss */
+.rating-chooser {
+  margin-bottom: 30px;
+}
+
+/* line 1774, ../scss/themes/_fxs-one.scss */
+.rating-chooser p {
+  font-weight: 700;
+}
+
+/* line 1777, ../scss/themes/_fxs-one.scss */
+.rating-wrap-post {
+  font-size: 20px;
+}
+
+/* line 1781, ../scss/themes/_fxs-one.scss */
+.submit-review textarea {
+  height: 105px;
+}
+
+/* line 1785, ../scss/themes/_fxs-one.scss */
+.related-products-wrapper {
+  margin-top: 30px;
+}
+
+/* line 1788, ../scss/themes/_fxs-one.scss */
+.related-products-title {
+  color: #feae52;
+  font-size: 25px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* line 1793, ../scss/themes/_fxs-one.scss */
+.related-products-wrapper .owl-nav {
+  position: absolute;
+  right: 0;
+  top: -56px;
+}
+
+/* line 1801, ../scss/themes/_fxs-one.scss */
+table.shop_table {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+/* line 1807, ../scss/themes/_fxs-one.scss */
+table.shop_table th, table.shop_table td {
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+/* line 1813, ../scss/themes/_fxs-one.scss */
+table.shop_table th {
+  background: none repeat scroll 0 0 #f4f4f4;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+/* line 1818, ../scss/themes/_fxs-one.scss */
+td.product-thumbnail img {
+  height: auto;
+  width: 70px;
+}
+
+/* line 1822, ../scss/themes/_fxs-one.scss */
+td.product-name {
+  font-size: 18px;
+}
+
+/* line 1825, ../scss/themes/_fxs-one.scss */
+div.quantity input.plus, div.quantity input.minus {
+  background: none repeat scroll 0 0 #5a88ca;
+  border: medium none;
+  color: #fff;
+  height: 25px;
+  line-height: 15px;
+  width: 25px;
+}
+
+/* line 1833, ../scss/themes/_fxs-one.scss */
+td.product-quantity div.quantity {
+  float: none;
+  margin: 0;
+}
+
+/* line 1837, ../scss/themes/_fxs-one.scss */
+td.actions div.coupon {
+  float: left;
+}
+
+/* line 1840, ../scss/themes/_fxs-one.scss */
+.cart-collaterals {
+  overflow: hidden;
+}
+
+/* line 1843, ../scss/themes/_fxs-one.scss */
+.cross-sells {
+  float: left;
+  margin-right: 3%;
+  width: 57%;
+}
+
+/* line 1848, ../scss/themes/_fxs-one.scss */
+.cart_totals {
+  float: right;
+  margin-bottom: 50px;
+  width: 40%;
+}
+
+/* line 1853, ../scss/themes/_fxs-one.scss */
+.cart-collaterals h2 {
+  color: #5a88ca;
+  font-size: 25px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+/* line 1859, ../scss/themes/_fxs-one.scss */
+div.cart-collaterals ul.products {
+  list-style: outside none none;
+  margin: 0 0 0 -30px;
+  padding: 0;
+}
+
+/* line 1864, ../scss/themes/_fxs-one.scss */
+div.cart-collaterals ul.products li.product {
+  float: left;
+  margin-left: 30px;
+  position: relative;
+  width: 198px;
+}
+
+/* line 1870, ../scss/themes/_fxs-one.scss */
+.cart_totals table {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  width: 100%;
+}
+
+/* line 1875, ../scss/themes/_fxs-one.scss */
+.cart_totals table th, .cart_totals table td {
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* line 1880, ../scss/themes/_fxs-one.scss */
+.cart_totals table th {
+  background: none repeat scroll 0 0 #f4f4f4;
+}
+
+/* line 1885, ../scss/themes/_fxs-one.scss */
+div.cart-collaterals ul.products li.product .onsale {
+  background: none repeat scroll 0 0 #5a88ca;
+  color: #fff;
+  padding: 5px 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* line 1892, ../scss/themes/_fxs-one.scss */
+div.cart-collaterals ul.products li.product h3 {
+  color: #333;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* line 1897, ../scss/themes/_fxs-one.scss */
+div.cart-collaterals ul.products li.product .price {
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+/* line 1905, ../scss/themes/_fxs-one.scss */
+div.cart-collaterals ul.products li.product .price ins {
+  color: #5a88ca;
+  font-weight: 700;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+/* line 1914, ../scss/themes/_fxs-one.scss */
+.woocommerce-info {
+  background: none repeat scroll 0 0 #f4f4f4;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+/* line 1920, ../scss/themes/_fxs-one.scss */
+.col2-set {
+  margin-left: -30px;
+  overflow: hidden;
+}
+
+/* line 1924, ../scss/themes/_fxs-one.scss */
+.col-1, .col-2 {
+  float: left;
+  margin-left: 30px;
+  width: 360px;
+}
+
+/* line 1929, ../scss/themes/_fxs-one.scss */
+#customer_details label {
+  display: block;
+  margin: 0 0 5px;
+}
+
+/* line 1933, ../scss/themes/_fxs-one.scss */
+#customer_details input[type="text"], #customer_details textarea, .shipping_calculator input[type=text] {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* line 1937, ../scss/themes/_fxs-one.scss */
+#customer_details h3 {
+  color: #5a88ca;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* line 1942, ../scss/themes/_fxs-one.scss */
+.create-account {
+  background: none repeat scroll 0 0 #f4f4f4;
+  margin-bottom: 50px;
+  padding: 15px;
+}
+
+/* line 1947, ../scss/themes/_fxs-one.scss */
+#order_review_heading {
+  color: #5a88ca;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* line 1952, ../scss/themes/_fxs-one.scss */
+#payment ul.payment_methods {
+  list-style: outside none none;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+/* line 1957, ../scss/themes/_fxs-one.scss */
+#payment ul.payment_methods li {
+  margin-bottom: 15px;
+}
+
+/* line 1960, ../scss/themes/_fxs-one.scss */
+a.about_paypal {
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+/* line 1966, ../scss/themes/_fxs-one.scss */
+#customer_details select, .shipping_calculator select {
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* line 1974, ../scss/themes/_fxs-one.scss */
+table.shop_table td.product-remove a {
+  display: inline-block;
+  padding: 0 5px 2px;
+  text-transform: uppercase;
+}
+
+/* line 1981, ../scss/themes/_fxs-one.scss */
+table.shop_table td.product-remove a:hover {
+  color: #fff;
+  background: red;
+  text-decoration: none;
+}
+
+/* line 1982, ../scss/themes/_fxs-one.scss */
+table.shop_table td.product-name a {
+  color: #222;
+}
+
+/* line 1983, ../scss/themes/_fxs-one.scss */
+table.shop_table td.product-name a:hover {
+  color: #5a88ca;
+  text-decoration: none;
+}
+
+/* line 1984, ../scss/themes/_fxs-one.scss */
+div.quantity input.plus:hover, div.quantity input.minus:hover {
+  background-color: #222;
+}
+
+/* line 1985, ../scss/themes/_fxs-one.scss */
+div.cart-collaterals ul.products li.product a:hover h3 {
+  color: #5a88ca;
+}
+
+/* line 1986, ../scss/themes/_fxs-one.scss */
+div.cart-collaterals ul.products li.product a:hover {
+  text-decoration: none;
+}
+
+/* line 1988, ../scss/themes/_fxs-one.scss */
+div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
+  background-color: #222;
+}
+
+/* line 1991, ../scss/themes/_fxs-one.scss */
+.cart-collaterals .shipping_calculator {
+  float: right;
+  width: 40%;
+}
+
+/* line 1997, ../scss/themes/_fxs-one.scss */
+#login-form-wrap, #coupon-collapse-wrap {
+  background: none repeat scroll 0 0 #f4f4f4;
+  margin-bottom: 30px;
+  padding: 25px;
+}
+
+/* line 2002, ../scss/themes/_fxs-one.scss */
+#login-form-wrap label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* line 2006, ../scss/themes/_fxs-one.scss */
+#login-form-wrap input[type="text"], #login-form-wrap input[type="password"] {
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+/* line 2010, ../scss/themes/_fxs-one.scss */
+#login-form-wrap input[type="submit"] {
+  margin-bottom: 15px;
+}
+
+/* line 2016, ../scss/themes/_fxs-one.scss */
+.single-shop-product h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* line 2020, ../scss/themes/_fxs-one.scss */
+.product-option-shop {
+  margin-top: 15px;
+}
+
+/* line 2024, ../scss/themes/_fxs-one.scss */
+.single-shop-product {
+  margin-bottom: 50px;
+}
+
+/* line 2026, ../scss/themes/_fxs-one.scss */
+.pagination > li > a, .pagination > li > span {
+  color: #5a88ca;
+}
+
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -1717,11 +3356,11 @@ html {
 
 /* line 27, ../scss/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "TeXGyreReg";
   font-size: 14px;
   line-height: 1.42857;
-  color: #333333;
-  background-color: #fff;
+  color: #FFFEFF;
+  background-color: #FFFFFF;
 }
 
 /* line 36, ../scss/bootstrap/_scaffolding.scss */
@@ -1777,7 +3416,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857;
-  background-color: #fff;
+  background-color: #FFFFFF;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -3520,7 +5159,7 @@ th {
 }
 /* line 62, ../scss/bootstrap/_tables.scss */
 .table .table {
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 /* line 75, ../scss/bootstrap/_tables.scss */
@@ -4295,7 +5934,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373;
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -5497,7 +7136,7 @@ tbody.collapse.in {
 /* line 96, ../scss/bootstrap/_navs.scss */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #fff;
+  background-color: #FFFFFF;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -5590,7 +7229,7 @@ tbody.collapse.in {
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #fff;
+    border-bottom-color: #FFFFFF;
   }
 }
 
@@ -6631,7 +8270,7 @@ a.badge:hover, a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857;
-  background-color: #fff;
+  background-color: #FFFFFF;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -6650,7 +8289,7 @@ a.badge:hover, a.badge:focus {
 /* line 27, ../scss/bootstrap/_thumbnails.scss */
 .thumbnail .caption {
   padding: 9px;
-  color: #333333;
+  color: #FFFEFF;
 }
 
 /* line 34, ../scss/bootstrap/_thumbnails.scss */
@@ -7880,7 +9519,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "TeXGyreReg";
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8018,7 +9657,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "TeXGyreReg";
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8791,7 +10430,7 @@ button.close {
     display: none !important;
   }
 }
-/* line 6, ../scss/main.scss */
+/* line 21, ../scss/main.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -8799,13 +10438,13 @@ button.close {
   padding: 0.2em 0;
 }
 
-/* line 13, ../scss/main.scss */
+/* line 28, ../scss/main.scss */
 body {
   padding: 0;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-/* line 18, ../scss/main.scss */
+/* line 33, ../scss/main.scss */
 .header,
 .marketing,
 .footer {
@@ -8814,13 +10453,13 @@ body {
 }
 
 /* Custom page header */
-/* line 26, ../scss/main.scss */
+/* line 41, ../scss/main.scss */
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
   /* Make the masthead heading the same height as the navigation */
 }
-/* line 31, ../scss/main.scss */
+/* line 46, ../scss/main.scss */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -8829,36 +10468,36 @@ body {
 }
 
 /* Custom page footer */
-/* line 40, ../scss/main.scss */
+/* line 55, ../scss/main.scss */
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 46, ../scss/main.scss */
+/* line 61, ../scss/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-/* line 51, ../scss/main.scss */
+/* line 66, ../scss/main.scss */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 55, ../scss/main.scss */
+/* line 70, ../scss/main.scss */
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
 /* Supporting marketing content */
-/* line 62, ../scss/main.scss */
+/* line 77, ../scss/main.scss */
 .marketing {
   margin: 40px 0;
 }
-/* line 65, ../scss/main.scss */
+/* line 80, ../scss/main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
@@ -8866,7 +10505,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
-  /* line 74, ../scss/main.scss */
+  /* line 89, ../scss/main.scss */
   .header,
   .marketing,
   .footer {
@@ -8875,16 +10514,133 @@ body {
   }
 
   /* Space out the masthead */
-  /* line 81, ../scss/main.scss */
+  /* line 96, ../scss/main.scss */
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 85, ../scss/main.scss */
+  /* line 100, ../scss/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
+}
+/* line 3, ../scss/components/_header.scss */
+.top-fixed-header {
+  background-color: #120f16;
+}
+/* line 6, ../scss/components/_header.scss */
+.top-fixed-header .top-q-link {
+  min-height: 60px;
+}
+/* line 10, ../scss/components/_header.scss */
+.top-fixed-header .top-q-link .top-q-link-inner {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #FFFEFF;
+  font-family: "TeXGyreReg";
+  font-size: 2.4rem;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+/* line 21, ../scss/components/_header.scss */
+.top-fixed-header .top-q-link button.top-q-link-inner {
+  font-size: 1.5rem;
+  height: 30px;
+  width: 80%;
+  border-radius: 0;
+  border: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #de4b2a;
+  background: -moz-linear-gradient(left, #de4b2a 0%, #f37c37 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #de4b2a), color-stop(100%, #f37c37));
+  background: -webkit-linear-gradient(left, #de4b2a 0%, #f37c37 100%);
+  background: -o-linear-gradient(left, #de4b2a 0%, #f37c37 100%);
+  background: -ms-linear-gradient(left, #de4b2a 0%, #f37c37 100%);
+  background: linear-gradient(to right, #de4b2a 0%, #f37c37 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4b2a', endColorstr='#f37c37', GradientType=1 );
+}
+
+/* line 1, ../scss/components/_footer.scss */
+#appFooter {
+  left: 0px;
+  bottom: 0px;
+  min-height: 180px;
+  width: 100%;
+  background: #fff;
+}
+
+/* line 9, ../scss/components/_footer.scss */
+#appSection {
+  height: calc(100% - 300px);
+  width: 100%;
+}
+
+/* line 14, ../scss/components/_footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 18, ../scss/components/_footer.scss */
+.footer-top-area {
+  background-color: #FFFEFF;
+}
+
+/* line 22, ../scss/components/_footer.scss */
+.footer-menu {
+  margin-top: 2rem;
+}
+/* line 25, ../scss/components/_footer.scss */
+.footer-menu .footer-menu-link {
+  padding: 0;
+  height: 40px;
+  text-align: center;
+}
+/* line 30, ../scss/components/_footer.scss */
+.footer-menu .footer-menu-link:last-child a {
+  border-right: 0;
+}
+/* line 34, ../scss/components/_footer.scss */
+.footer-menu .footer-menu-link a {
+  font-size: 2.4rem;
+  color: #120f16;
+  border-right: solid 2px #120f16;
+  padding: 0;
+}
+/* line 10, ../scss/util-mixins/_base-common.scss */
+.footer-menu .reset-row {
+  margin: 0;
+}
+/* line 12, ../scss/util-mixins/_base-common.scss */
+.footer-menu .reset-row .reset-col {
+  padding: 0;
+}
+/* line 42, ../scss/components/_footer.scss */
+.footer-menu .footer-submenu-link {
+  width: 18%;
+  text-align: center;
+}
+/* line 45, ../scss/components/_footer.scss */
+.footer-menu .footer-submenu-link:first-child {
+  margin-left: 7%;
+}
+
+/* line 51, ../scss/components/_footer.scss */
+.footer-social-menu {
+  margin-top: 3rem;
+  padding-left: 10rem;
+}
+
+/* line 1, ../scss/components/_home.scss */
+body {
+  background: url("../images/BG_2.35-58.png") no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */
