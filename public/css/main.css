@@ -10735,6 +10735,13 @@ html, body {
   text-align: center;
 }
 
+/* line 70, ../scss/components/_footer.scss */
+.footer-right-menu {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 /* line 1, ../scss/components/_home.scss */
 body {
   background: url("../images/BG_2.35-58.png") no-repeat;
