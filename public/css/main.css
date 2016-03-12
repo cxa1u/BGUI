@@ -10549,7 +10549,14 @@ body {
 .top-fixed-header .top-q-link {
   min-height: 60px;
 }
-/* line 9, ../scss/components/_header.scss */
+@media (max-width: 767px) {
+  /* line 6, ../scss/components/_header.scss */
+  .top-fixed-header .top-q-link {
+    padding-top: 10px;
+    text-align: center;
+  }
+}
+/* line 14, ../scss/components/_header.scss */
 .top-fixed-header .top-q-link .top-q-link-inner {
   margin: 0;
   padding: 0;
@@ -10560,20 +10567,28 @@ body {
   font-family: "TeXGyreReg";
   font-size: 2.4rem;
   width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
 }
-/* line 21, ../scss/components/_header.scss */
+@media (min-width: 768px) {
+  /* line 14, ../scss/components/_header.scss */
+  .top-fixed-header .top-q-link .top-q-link-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media (max-width: 767px) {
+  /* line 14, ../scss/components/_header.scss */
+  .top-fixed-header .top-q-link .top-q-link-inner {
+    text-align: center;
+  }
+}
+/* line 31, ../scss/components/_header.scss */
 .top-fixed-header .top-q-link button.top-q-link-inner {
   font-size: 1.5rem;
   height: 30px;
   width: 80%;
   border-radius: 0;
   border: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background: #de4b2a;
   background: -moz-linear-gradient(left, #de4b2a 0%, #f37c37 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, #de4b2a), color-stop(100%, #f37c37));
@@ -10584,7 +10599,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4b2a', endColorstr='#f37c37', GradientType=1 );
 }
 
-/* line 41, ../scss/components/_header.scss */
+/* line 49, ../scss/components/_header.scss */
 .navbar-toggle-menu-title {
   float: left;
   color: #fff;
@@ -10601,24 +10616,24 @@ body {
   padding: 0;
 }
 
-/* line 50, ../scss/components/_header.scss */
+/* line 58, ../scss/components/_header.scss */
 .mainmenu-area {
   background: none;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* line 55, ../scss/components/_header.scss */
+/* line 63, ../scss/components/_header.scss */
 .transp-menu-link {
   font-family: "TeXGyreReg";
   color: #fff;
   margin-left: 20px;
   padding: 5px;
 }
-/* line 60, ../scss/components/_header.scss */
+/* line 68, ../scss/components/_header.scss */
 .transp-menu-link:hover, .transp-menu-link:active {
   text-decoration: none;
 }
-/* line 63, ../scss/components/_header.scss */
+/* line 71, ../scss/components/_header.scss */
 .transp-menu-link:last-child {
   border: 1px solid #fff;
 }

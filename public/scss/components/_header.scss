@@ -5,7 +5,12 @@
 
     .top-q-link {
         min-height: 60px;
-
+        
+        @media (max-width: $screen-xs-max) {
+                padding-top: 10px;
+                text-align: center;
+        }
+        
         .top-q-link-inner {
             @include reset;
 
@@ -13,9 +18,14 @@
             font-family: "TeXGyreReg";
             font-size: 2.4rem;
             width: 100%;
-            text-align: center;
+           
+            @media (min-width: $screen-sm-min) {
+               @include vertical-center;
+            }
 
-            @include vertical-center;
+            @media (max-width: $screen-xs-max) {
+                text-align: center;
+            }
         }
 
         button.top-q-link-inner {
@@ -24,8 +34,6 @@
             width: 80%;
             border-radius: 0;
             border: 0;
-            left: 50%;
-            transform: translate(-50%, -50%);
             background: rgba(222, 75, 42, 1);
             background: -moz-linear-gradient(left, rgba(222, 75, 42, 1) 0%, rgba(243, 124, 55, 1) 100%);
             background: -webkit-gradient(left top, right top, color-stop(0%, rgba(222, 75, 42, 1)), color-stop(100%, rgba(243, 124, 55, 1)));
