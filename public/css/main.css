@@ -10698,6 +10698,12 @@ html, body {
   border-right: solid 2px #120f16;
   padding: 0;
 }
+@media (max-width: 767px) {
+  /* line 35, ../scss/components/_footer.scss */
+  .footer-menu .footer-menu-link a {
+    font-size: 1.5rem;
+  }
+}
 /* line 10, ../scss/util-mixins/_base-common.scss */
 .footer-menu .reset-row {
   margin: 0;
@@ -10706,20 +10712,27 @@ html, body {
 .footer-menu .reset-row .reset-col {
   padding: 0;
 }
-/* line 43, ../scss/components/_footer.scss */
+/* line 50, ../scss/components/_footer.scss */
 .footer-menu .footer-submenu-link {
-  width: 18%;
   text-align: center;
 }
-/* line 46, ../scss/components/_footer.scss */
-.footer-menu .footer-submenu-link:first-child {
-  margin-left: 7%;
+@media (min-width: 768px) {
+  /* line 50, ../scss/components/_footer.scss */
+  .footer-menu .footer-submenu-link {
+    width: 18%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 57, ../scss/components/_footer.scss */
+  .footer-menu .footer-submenu-link:first-child {
+    margin-left: 7%;
+  }
 }
 
-/* line 52, ../scss/components/_footer.scss */
+/* line 65, ../scss/components/_footer.scss */
 .footer-social-menu {
   margin-top: 3rem;
-  padding-left: 10rem;
+  text-align: center;
 }
 
 /* line 1, ../scss/components/_home.scss */
