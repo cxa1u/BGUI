@@ -81,12 +81,12 @@ div.cart-collaterals ul.products li.product {
 .navbar-toggle {
     border: 0;
     margin: 10px auto;
-    margin-left: 30px;
+    margin-left: 10px;
     padding-right: 0;
 }
 .navbar-toggle .icon-bar { background: none repeat scroll 0 0 #ffffff }  
 .navbar-collapse.collapse.in {
-  background: none repeat scroll 0 0 #f4f4f4;
+  background: none repeat scroll 0 0 transparent;
   position: relative;
   z-index: 99;
 } 

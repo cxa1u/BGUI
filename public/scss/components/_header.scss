@@ -5,12 +5,12 @@
 
     .top-q-link {
         min-height: 60px;
-        
+
         @media (max-width: $screen-xs-max) {
-                padding-top: 10px;
-                text-align: center;
+            padding-top: 10px;
+            text-align: center;
         }
-        
+
         .top-q-link-inner {
             @include reset;
 
@@ -18,9 +18,9 @@
             font-family: "TeXGyreReg";
             font-size: 2.4rem;
             width: 100%;
-           
+
             @media (min-width: $screen-sm-min) {
-               @include vertical-center;
+                @include vertical-center;
             }
 
             @media (max-width: $screen-xs-max) {
@@ -49,27 +49,31 @@
 .navbar-toggle-menu-title {
     float: left;
     color: #fff;
-    padding-top: 1.1rem;
+    padding-top: 1rem;
+    padding-left: 10px;
     font-size: 2.1rem;
-    width: 92%;
-    @include reset-row-column;
 }
 
 .mainmenu-area {
     background: none;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .transp-menu-link {
-    font-family: $brand-fontFamily-texGyre-reg;
-    color: #fff;
-    margin-left: 20px;
-    padding: 5px;
-    &:hover,&:active {
-        text-decoration: none;
-    }
-    &:last-child {
-        border: 1px solid #fff;
+    padding-top: 1.5rem;
+
+    a {
+        font-family: $brand-fontFamily-texGyre-reg;
+        color: #fff;
+        margin-left: 20px;
+        padding: 2px 5px;
+
+        &:hover, &:active {
+            text-decoration: none;
+        }
+
+        &:last-child {
+            border: 1px solid #fff;
+        }
     }
 }
-
