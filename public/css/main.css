@@ -7249,7 +7249,8 @@ tbody.collapse.in {
   border-top-left-radius: 0;
 }
 
-/* line 11, ../scss/bootstrap/_navbar.scss */
+/* NavBar styles */
+/* line 13, ../scss/bootstrap/_navbar.scss */
 .navbar {
   position: relative;
   min-height: 50px;
@@ -7266,7 +7267,7 @@ tbody.collapse.in {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 11, ../scss/bootstrap/_navbar.scss */
+  /* line 13, ../scss/bootstrap/_navbar.scss */
   .navbar {
     border-radius: 4px;
   }
@@ -7282,13 +7283,13 @@ tbody.collapse.in {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 31, ../scss/bootstrap/_navbar.scss */
+  /* line 33, ../scss/bootstrap/_navbar.scss */
   .navbar-header {
     float: left;
   }
 }
 
-/* line 50, ../scss/bootstrap/_navbar.scss */
+/* line 52, ../scss/bootstrap/_navbar.scss */
 .navbar-collapse {
   overflow-x: visible;
   padding-right: 15px;
@@ -7306,49 +7307,49 @@ tbody.collapse.in {
 .navbar-collapse:after {
   clear: both;
 }
-/* line 59, ../scss/bootstrap/_navbar.scss */
+/* line 61, ../scss/bootstrap/_navbar.scss */
 .navbar-collapse.in {
   overflow-y: auto;
 }
 @media (min-width: 768px) {
-  /* line 50, ../scss/bootstrap/_navbar.scss */
+  /* line 52, ../scss/bootstrap/_navbar.scss */
   .navbar-collapse {
     width: auto;
     border-top: 0;
     box-shadow: none;
   }
-  /* line 68, ../scss/bootstrap/_navbar.scss */
+  /* line 70, ../scss/bootstrap/_navbar.scss */
   .navbar-collapse.collapse {
     display: block !important;
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
   }
-  /* line 75, ../scss/bootstrap/_navbar.scss */
+  /* line 77, ../scss/bootstrap/_navbar.scss */
   .navbar-collapse.in {
     overflow-y: visible;
   }
-  /* line 81, ../scss/bootstrap/_navbar.scss */
+  /* line 83, ../scss/bootstrap/_navbar.scss */
   .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-/* line 92, ../scss/bootstrap/_navbar.scss */
+/* line 94, ../scss/bootstrap/_navbar.scss */
 .navbar-fixed-top .navbar-collapse,
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 340px;
 }
 @media (max-device-width: 480px) and (orientation: landscape) {
-  /* line 92, ../scss/bootstrap/_navbar.scss */
+  /* line 94, ../scss/bootstrap/_navbar.scss */
   .navbar-fixed-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
     max-height: 200px;
   }
 }
 
-/* line 108, ../scss/bootstrap/_navbar.scss */
+/* line 110, ../scss/bootstrap/_navbar.scss */
 .container > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
@@ -7357,7 +7358,7 @@ tbody.collapse.in {
   margin-left: -15px;
 }
 @media (min-width: 768px) {
-  /* line 108, ../scss/bootstrap/_navbar.scss */
+  /* line 110, ../scss/bootstrap/_navbar.scss */
   .container > .navbar-header,
   .container > .navbar-collapse,
   .container-fluid > .navbar-header,
@@ -7367,19 +7368,19 @@ tbody.collapse.in {
   }
 }
 
-/* line 128, ../scss/bootstrap/_navbar.scss */
+/* line 130, ../scss/bootstrap/_navbar.scss */
 .navbar-static-top {
   z-index: 1000;
   border-width: 0 0 1px;
 }
 @media (min-width: 768px) {
-  /* line 128, ../scss/bootstrap/_navbar.scss */
+  /* line 130, ../scss/bootstrap/_navbar.scss */
   .navbar-static-top {
     border-radius: 0;
   }
 }
 
-/* line 138, ../scss/bootstrap/_navbar.scss */
+/* line 140, ../scss/bootstrap/_navbar.scss */
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
@@ -7388,27 +7389,27 @@ tbody.collapse.in {
   z-index: 1030;
 }
 @media (min-width: 768px) {
-  /* line 138, ../scss/bootstrap/_navbar.scss */
+  /* line 140, ../scss/bootstrap/_navbar.scss */
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
   }
 }
 
-/* line 150, ../scss/bootstrap/_navbar.scss */
+/* line 152, ../scss/bootstrap/_navbar.scss */
 .navbar-fixed-top {
   top: 0;
   border-width: 0 0 1px;
 }
 
-/* line 154, ../scss/bootstrap/_navbar.scss */
+/* line 156, ../scss/bootstrap/_navbar.scss */
 .navbar-fixed-bottom {
   bottom: 0;
   margin-bottom: 0;
   border-width: 1px 0 0;
 }
 
-/* line 163, ../scss/bootstrap/_navbar.scss */
+/* line 165, ../scss/bootstrap/_navbar.scss */
 .navbar-brand {
   float: left;
   padding: 15px 15px;
@@ -7416,22 +7417,22 @@ tbody.collapse.in {
   line-height: 20px;
   height: 50px;
 }
-/* line 170, ../scss/bootstrap/_navbar.scss */
+/* line 172, ../scss/bootstrap/_navbar.scss */
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
-/* line 175, ../scss/bootstrap/_navbar.scss */
+/* line 177, ../scss/bootstrap/_navbar.scss */
 .navbar-brand > img {
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 180, ../scss/bootstrap/_navbar.scss */
+  /* line 182, ../scss/bootstrap/_navbar.scss */
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
   }
 }
 
-/* line 193, ../scss/bootstrap/_navbar.scss */
+/* line 195, ../scss/bootstrap/_navbar.scss */
 .navbar-toggle {
   position: relative;
   float: right;
@@ -7444,40 +7445,40 @@ tbody.collapse.in {
   border: 1px solid transparent;
   border-radius: 4px;
 }
-/* line 206, ../scss/bootstrap/_navbar.scss */
+/* line 208, ../scss/bootstrap/_navbar.scss */
 .navbar-toggle:focus {
   outline: 0;
 }
-/* line 211, ../scss/bootstrap/_navbar.scss */
+/* line 213, ../scss/bootstrap/_navbar.scss */
 .navbar-toggle .icon-bar {
   display: block;
   width: 22px;
   height: 2px;
   border-radius: 1px;
 }
-/* line 217, ../scss/bootstrap/_navbar.scss */
+/* line 219, ../scss/bootstrap/_navbar.scss */
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
 @media (min-width: 768px) {
-  /* line 193, ../scss/bootstrap/_navbar.scss */
+  /* line 195, ../scss/bootstrap/_navbar.scss */
   .navbar-toggle {
     display: none;
   }
 }
 
-/* line 232, ../scss/bootstrap/_navbar.scss */
+/* line 234, ../scss/bootstrap/_navbar.scss */
 .navbar-nav {
   margin: 7.5px -15px;
 }
-/* line 235, ../scss/bootstrap/_navbar.scss */
+/* line 237, ../scss/bootstrap/_navbar.scss */
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
 }
 @media (max-width: 767px) {
-  /* line 243, ../scss/bootstrap/_navbar.scss */
+  /* line 245, ../scss/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -7487,38 +7488,38 @@ tbody.collapse.in {
     border: 0;
     box-shadow: none;
   }
-  /* line 251, ../scss/bootstrap/_navbar.scss */
+  /* line 253, ../scss/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a,
   .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
-  /* line 255, ../scss/bootstrap/_navbar.scss */
+  /* line 257, ../scss/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a {
     line-height: 20px;
   }
-  /* line 257, ../scss/bootstrap/_navbar.scss */
+  /* line 259, ../scss/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
     background-image: none;
   }
 }
 @media (min-width: 768px) {
-  /* line 232, ../scss/bootstrap/_navbar.scss */
+  /* line 234, ../scss/bootstrap/_navbar.scss */
   .navbar-nav {
     float: left;
     margin: 0;
   }
-  /* line 270, ../scss/bootstrap/_navbar.scss */
+  /* line 272, ../scss/bootstrap/_navbar.scss */
   .navbar-nav > li {
     float: left;
   }
-  /* line 272, ../scss/bootstrap/_navbar.scss */
+  /* line 274, ../scss/bootstrap/_navbar.scss */
   .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
   }
 }
 
-/* line 286, ../scss/bootstrap/_navbar.scss */
+/* line 288, ../scss/bootstrap/_navbar.scss */
 .navbar-form {
   margin-left: -15px;
   margin-right: -15px;
@@ -7592,17 +7593,17 @@ tbody.collapse.in {
   }
 }
 @media (max-width: 767px) {
-  /* line 298, ../scss/bootstrap/_navbar.scss */
+  /* line 300, ../scss/bootstrap/_navbar.scss */
   .navbar-form .form-group {
     margin-bottom: 5px;
   }
-  /* line 302, ../scss/bootstrap/_navbar.scss */
+  /* line 304, ../scss/bootstrap/_navbar.scss */
   .navbar-form .form-group:last-child {
     margin-bottom: 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 286, ../scss/bootstrap/_navbar.scss */
+  /* line 288, ../scss/bootstrap/_navbar.scss */
   .navbar-form {
     width: auto;
     border: 0;
@@ -7615,14 +7616,14 @@ tbody.collapse.in {
   }
 }
 
-/* line 327, ../scss/bootstrap/_navbar.scss */
+/* line 329, ../scss/bootstrap/_navbar.scss */
 .navbar-nav > li > .dropdown-menu {
   margin-top: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-/* line 332, ../scss/bootstrap/_navbar.scss */
+/* line 334, ../scss/bootstrap/_navbar.scss */
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
   margin-bottom: 0;
   border-top-right-radius: 4px;
@@ -7631,29 +7632,29 @@ tbody.collapse.in {
   border-bottom-left-radius: 0;
 }
 
-/* line 343, ../scss/bootstrap/_navbar.scss */
+/* line 345, ../scss/bootstrap/_navbar.scss */
 .navbar-btn {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-/* line 346, ../scss/bootstrap/_navbar.scss */
+/* line 348, ../scss/bootstrap/_navbar.scss */
 .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 349, ../scss/bootstrap/_navbar.scss */
+/* line 351, ../scss/bootstrap/_navbar.scss */
 .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn {
   margin-top: 14px;
   margin-bottom: 14px;
 }
 
-/* line 359, ../scss/bootstrap/_navbar.scss */
+/* line 361, ../scss/bootstrap/_navbar.scss */
 .navbar-text {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 @media (min-width: 768px) {
-  /* line 359, ../scss/bootstrap/_navbar.scss */
+  /* line 361, ../scss/bootstrap/_navbar.scss */
   .navbar-text {
     float: left;
     margin-left: 15px;
@@ -7662,227 +7663,227 @@ tbody.collapse.in {
 }
 
 @media (min-width: 768px) {
-  /* line 379, ../scss/bootstrap/_navbar.scss */
+  /* line 381, ../scss/bootstrap/_navbar.scss */
   .navbar-left {
     float: left !important;
   }
 
-  /* line 382, ../scss/bootstrap/_navbar.scss */
+  /* line 384, ../scss/bootstrap/_navbar.scss */
   .navbar-right {
     float: right !important;
     margin-right: -15px;
   }
-  /* line 386, ../scss/bootstrap/_navbar.scss */
+  /* line 388, ../scss/bootstrap/_navbar.scss */
   .navbar-right ~ .navbar-right {
     margin-right: 0;
   }
 }
-/* line 397, ../scss/bootstrap/_navbar.scss */
+/* line 399, ../scss/bootstrap/_navbar.scss */
 .navbar-default {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
 }
-/* line 401, ../scss/bootstrap/_navbar.scss */
+/* line 403, ../scss/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand {
   color: #777;
 }
-/* line 403, ../scss/bootstrap/_navbar.scss */
+/* line 405, ../scss/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #5e5e5e;
   background-color: transparent;
 }
-/* line 410, ../scss/bootstrap/_navbar.scss */
+/* line 412, ../scss/bootstrap/_navbar.scss */
 .navbar-default .navbar-text {
   color: #777;
 }
-/* line 415, ../scss/bootstrap/_navbar.scss */
+/* line 417, ../scss/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a {
   color: #777;
 }
-/* line 418, ../scss/bootstrap/_navbar.scss */
+/* line 420, ../scss/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #333;
   background-color: transparent;
 }
-/* line 425, ../scss/bootstrap/_navbar.scss */
+/* line 427, ../scss/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #555;
   background-color: #e7e7e7;
 }
-/* line 433, ../scss/bootstrap/_navbar.scss */
+/* line 435, ../scss/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
   color: #ccc;
   background-color: transparent;
 }
-/* line 442, ../scss/bootstrap/_navbar.scss */
+/* line 444, ../scss/bootstrap/_navbar.scss */
 .navbar-default .navbar-toggle {
   border-color: #ddd;
 }
-/* line 444, ../scss/bootstrap/_navbar.scss */
+/* line 446, ../scss/bootstrap/_navbar.scss */
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #ddd;
 }
-/* line 448, ../scss/bootstrap/_navbar.scss */
+/* line 450, ../scss/bootstrap/_navbar.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #888;
 }
-/* line 453, ../scss/bootstrap/_navbar.scss */
+/* line 455, ../scss/bootstrap/_navbar.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #e7e7e7;
 }
-/* line 462, ../scss/bootstrap/_navbar.scss */
+/* line 464, ../scss/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   background-color: #e7e7e7;
   color: #555;
 }
 @media (max-width: 767px) {
-  /* line 473, ../scss/bootstrap/_navbar.scss */
+  /* line 475, ../scss/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #777;
   }
-  /* line 475, ../scss/bootstrap/_navbar.scss */
+  /* line 477, ../scss/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #333;
     background-color: transparent;
   }
-  /* line 482, ../scss/bootstrap/_navbar.scss */
+  /* line 484, ../scss/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
     background-color: #e7e7e7;
   }
-  /* line 490, ../scss/bootstrap/_navbar.scss */
+  /* line 492, ../scss/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #ccc;
     background-color: transparent;
   }
 }
-/* line 506, ../scss/bootstrap/_navbar.scss */
+/* line 508, ../scss/bootstrap/_navbar.scss */
 .navbar-default .navbar-link {
   color: #777;
 }
-/* line 508, ../scss/bootstrap/_navbar.scss */
+/* line 510, ../scss/bootstrap/_navbar.scss */
 .navbar-default .navbar-link:hover {
   color: #333;
 }
-/* line 513, ../scss/bootstrap/_navbar.scss */
+/* line 515, ../scss/bootstrap/_navbar.scss */
 .navbar-default .btn-link {
   color: #777;
 }
-/* line 515, ../scss/bootstrap/_navbar.scss */
+/* line 517, ../scss/bootstrap/_navbar.scss */
 .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
   color: #333;
 }
-/* line 521, ../scss/bootstrap/_navbar.scss */
+/* line 523, ../scss/bootstrap/_navbar.scss */
 .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 
-/* line 531, ../scss/bootstrap/_navbar.scss */
+/* line 533, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse {
   background-color: #222;
   border-color: #090909;
 }
-/* line 535, ../scss/bootstrap/_navbar.scss */
+/* line 537, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
 }
-/* line 537, ../scss/bootstrap/_navbar.scss */
+/* line 539, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
   color: #fff;
   background-color: transparent;
 }
-/* line 544, ../scss/bootstrap/_navbar.scss */
+/* line 546, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-text {
   color: #9d9d9d;
 }
-/* line 549, ../scss/bootstrap/_navbar.scss */
+/* line 551, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: #9d9d9d;
 }
-/* line 552, ../scss/bootstrap/_navbar.scss */
+/* line 554, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   color: #fff;
   background-color: transparent;
 }
-/* line 559, ../scss/bootstrap/_navbar.scss */
+/* line 561, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   color: #fff;
   background-color: #090909;
 }
-/* line 567, ../scss/bootstrap/_navbar.scss */
+/* line 569, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
   color: #444;
   background-color: transparent;
 }
-/* line 577, ../scss/bootstrap/_navbar.scss */
+/* line 579, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-toggle {
   border-color: #333;
 }
-/* line 579, ../scss/bootstrap/_navbar.scss */
+/* line 581, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
   background-color: #333;
 }
-/* line 583, ../scss/bootstrap/_navbar.scss */
+/* line 585, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #fff;
 }
-/* line 588, ../scss/bootstrap/_navbar.scss */
+/* line 590, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-color: #101010;
 }
-/* line 596, ../scss/bootstrap/_navbar.scss */
+/* line 598, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: #090909;
   color: #fff;
 }
 @media (max-width: 767px) {
-  /* line 607, ../scss/bootstrap/_navbar.scss */
+  /* line 609, ../scss/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #090909;
   }
-  /* line 610, ../scss/bootstrap/_navbar.scss */
+  /* line 612, ../scss/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
     background-color: #090909;
   }
-  /* line 613, ../scss/bootstrap/_navbar.scss */
+  /* line 615, ../scss/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #9d9d9d;
   }
-  /* line 615, ../scss/bootstrap/_navbar.scss */
+  /* line 617, ../scss/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #fff;
     background-color: transparent;
   }
-  /* line 622, ../scss/bootstrap/_navbar.scss */
+  /* line 624, ../scss/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #fff;
     background-color: #090909;
   }
-  /* line 630, ../scss/bootstrap/_navbar.scss */
+  /* line 632, ../scss/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #444;
     background-color: transparent;
   }
 }
-/* line 641, ../scss/bootstrap/_navbar.scss */
+/* line 643, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-link {
   color: #9d9d9d;
 }
-/* line 643, ../scss/bootstrap/_navbar.scss */
+/* line 645, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-link:hover {
   color: #fff;
 }
-/* line 648, ../scss/bootstrap/_navbar.scss */
+/* line 650, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .btn-link {
   color: #9d9d9d;
 }
-/* line 650, ../scss/bootstrap/_navbar.scss */
+/* line 652, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link:focus {
   color: #fff;
 }
-/* line 656, ../scss/bootstrap/_navbar.scss */
+/* line 658, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse .btn-link[disabled]:focus, fieldset[disabled] .navbar-inverse .btn-link:hover, fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
 }
@@ -10430,7 +10431,12 @@ button.close {
     display: none !important;
   }
 }
-/* line 21, ../scss/main.scss */
+/* line 2, ../scss/_bootstrap-overrides.scss */
+.navbar-toggle {
+  float: left;
+}
+
+/* line 23, ../scss/main.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -10438,13 +10444,13 @@ button.close {
   padding: 0.2em 0;
 }
 
-/* line 28, ../scss/main.scss */
+/* line 30, ../scss/main.scss */
 body {
   padding: 0;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-/* line 33, ../scss/main.scss */
+/* line 35, ../scss/main.scss */
 .header,
 .marketing,
 .footer {
@@ -10453,13 +10459,13 @@ body {
 }
 
 /* Custom page header */
-/* line 41, ../scss/main.scss */
+/* line 43, ../scss/main.scss */
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
   /* Make the masthead heading the same height as the navigation */
 }
-/* line 46, ../scss/main.scss */
+/* line 48, ../scss/main.scss */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -10468,36 +10474,36 @@ body {
 }
 
 /* Custom page footer */
-/* line 55, ../scss/main.scss */
+/* line 57, ../scss/main.scss */
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 61, ../scss/main.scss */
+/* line 63, ../scss/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-/* line 66, ../scss/main.scss */
+/* line 68, ../scss/main.scss */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 70, ../scss/main.scss */
+/* line 72, ../scss/main.scss */
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
 /* Supporting marketing content */
-/* line 77, ../scss/main.scss */
+/* line 79, ../scss/main.scss */
 .marketing {
   margin: 40px 0;
 }
-/* line 80, ../scss/main.scss */
+/* line 82, ../scss/main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
@@ -10505,7 +10511,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
-  /* line 89, ../scss/main.scss */
+  /* line 91, ../scss/main.scss */
   .header,
   .marketing,
   .footer {
@@ -10514,13 +10520,13 @@ body {
   }
 
   /* Space out the masthead */
-  /* line 96, ../scss/main.scss */
+  /* line 98, ../scss/main.scss */
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 100, ../scss/main.scss */
+  /* line 102, ../scss/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
