@@ -10558,6 +10558,13 @@ body {
   padding: 0;
 }
 
+/* line 31, ../scss/util-mixins/_base-common.scss */
+.v-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /* line 3, ../scss/components/_header.scss */
 .top-fixed-header {
   background-color: #120f16;
@@ -10708,7 +10715,7 @@ html, body {
 .footer-menu .reset-row {
   margin: 0;
 }
-/* line 12, ../scss/util-mixins/_base-common.scss */
+/* line 13, ../scss/util-mixins/_base-common.scss */
 .footer-menu .reset-row .reset-col {
   padding: 0;
 }
@@ -10755,9 +10762,9 @@ body {
 
 /* line 1, ../scss/components/_maps.scss */
 #mapContainer {
-  margin-top: 9rem;
   width: 100%;
-  height: 500px;
+  min-height: 382px;
+  margin-bottom: 10px;
 }
 
 /* line 7, ../scss/components/_maps.scss */
@@ -10806,40 +10813,91 @@ body {
 /* line 46, ../scss/components/_maps.scss */
 .map-data-row {
   margin-bottom: 30px;
+  margin-top: 85px;
 }
 
-/* line 50, ../scss/components/_maps.scss */
+/* line 51, ../scss/components/_maps.scss */
 .home-header {
   font-size: 60px;
   text-shadow: 0px 0px 12px #000;
 }
 @media (max-width: 480px) {
-  /* line 50, ../scss/components/_maps.scss */
+  /* line 51, ../scss/components/_maps.scss */
   .home-header {
     font-size: 3.5rem;
   }
 }
 
-/* line 59, ../scss/components/_maps.scss */
+/* line 60, ../scss/components/_maps.scss */
 .home-sub-header {
   font-size: 25px;
   text-shadow: 0px 0px 12px #000;
 }
 @media (max-width: 480px) {
-  /* line 59, ../scss/components/_maps.scss */
+  /* line 60, ../scss/components/_maps.scss */
   .home-sub-header {
     font-size: 1.9rem;
   }
 }
 
-/* line 68, ../scss/components/_maps.scss */
+/* line 69, ../scss/components/_maps.scss */
 h3.location-title {
   text-shadow: 0px 0px 12px #000;
 }
 
-/* line 72, ../scss/components/_maps.scss */
+/* line 73, ../scss/components/_maps.scss */
 .search-container {
   margin-top: 70px;
+}
+
+/* line 77, ../scss/components/_maps.scss */
+.location-table {
+  background: url("../images/BG_2.35-62.png") no-repeat;
+  background-color: rgba(15, 13, 15, 0.3);
+  background-position: 0 100%;
+  min-height: 382px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* .location-table-wrapper {
+    height: 500px;
+    background: url("../images/BG_2.35-62.png") no-repeat;
+    background-position: 0 100%;
+} */
+/* line 93, ../scss/components/_maps.scss */
+.record-header {
+  font-size: 1.7rem;
+  height: 29px;
+}
+
+/* line 97, ../scss/components/_maps.scss */
+.row-one {
+  background-color: rgba(13, 14, 18, 0.3);
+}
+
+/* line 101, ../scss/components/_maps.scss */
+.menu-title {
+  height: 40px;
+}
+
+/* line 104, ../scss/components/_maps.scss */
+.location-record-row {
+  margin-top: 15px;
+}
+/* line 105, ../scss/components/_maps.scss */
+.location-record-row:first-child {
+  margin-top: 0;
+}
+
+/* line 111, ../scss/components/_maps.scss */
+.record-marker {
+  padding-left: 10px;
+}
+
+/* line 115, ../scss/components/_maps.scss */
+.record-time {
+  height: 4rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,29 +1,35 @@
 @mixin reset {
-	margin: 0;
-	padding: 0;
-	line-height: 1;
-	font-weight: normal;
-	font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: normal;
+    font-size: 1rem;
 }
 
-@mixin reset-row-column{
-	.reset-row {
-		margin: 0;
-		.reset-col {
-			padding: 0;
-		}
-	}
-}
+@mixin reset-row-column {
+    .reset-row {
+        margin: 0;
 
+        .reset-col {
+            padding: 0;
+        }
+    }
+}
 
 .right {
-	float: right;
+    float: right;
 }
 
 .reset-row {
-	margin: 0;
+    margin: 0;
 }
 
 .reset-col {
-	padding: 0;
+    padding: 0;
+}
+
+.v-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
