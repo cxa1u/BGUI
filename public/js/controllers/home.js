@@ -9,6 +9,7 @@
  */
 angular.module('ufaasApp')
   .controller('HomeCtrl', function () {
+
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
