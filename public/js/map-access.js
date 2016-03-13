@@ -1,16 +1,23 @@
 //@@ Maps
 
 var map;
+var posObjArray = [];
 
 function initMap() {
 
     google.maps.visualRefresh = true;
 
+    // Default markers
+    posObjArray[0] = new google.maps.LatLng(37.3831663,-121.9972578);
+    posObjArray[1] = new google.maps.LatLng(37.3817151,-121.9975511);
+    posObjArray[2] = new google.maps.LatLng(37.3317121,-121.9978455);
+    posObjArray[3] = new google.maps.LatLng(37.3891982,-121.9858969);
+
 
     var mapOptions = {
         backgroundColor: "#CADFAA",
         center: new google.maps.LatLng(37.3831663,-121.9972578),
-        zoom: 15,
+        zoom: 10,
         mapTypeControl: false,
         mapTypeControlOptions: {
             mapTypeIds: [google.maps.MapTypeId.ROADMAP]
@@ -20,21 +27,7 @@ function initMap() {
 
     var mapElement = document.getElementById('mapContainer');
     map = new google.maps.Map(mapElement, mapOptions);
-
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            var lat = position.coords.latitude;
-            var lng = position.coords.longitude;
-            //Creating LatLng object with latitude and
-            //longitude.
-            var userLocation = new google.maps.LatLng(37.3831663,-121.9972578);
-           // map.setCenter(userLocation);
-           // map.setZoom(15);
-            var posObjArray = [];
-            posObjArray[0] = new google.maps.LatLng(37.3831663,-121.9972578);
-            generateMarkers(posObjArray, map);
-        });
-    }
+    generateMarkers(posObjArray, map);
 }
 
 
