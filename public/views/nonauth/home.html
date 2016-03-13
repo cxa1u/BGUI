@@ -1,16 +1,42 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-12" id="mapContainer">
-        
-        MAP AREA
-
-
-        </div>
-    </div>
+	<div class="row">
+		
+		<div class="col-md-12">
+			<h1 class="home-header text-center">
+			ARE YOU HUNGRY YET?
+			</h1>
+			<p class="home-sub-header text-center">
+				ORDER YOUR MEALS AHEAD OF TIME!
+			</p>
+		</div>
+		<div class="col-md-4 col-md-offset-4 search-container">
+			<div class="location-title">
+				<h3 class="text-center">
+				SAN JOSE, CALIFORNIA
+				</h3>
+			</div>
+			
+			<div class="form-group location-search has-success has-feedback">
+				
+				<input type="text" class="form-control" id="searchInputCtrl" aria-describedby="inputSuccess2Status" placeholder="ENTER ZIPCODE">
+				<span class="search-input-img form-control-feedback" aria-hidden="true">
+					
+				</span>
+				<label class="control-label" for="inputSuccess2">ADVANCED SEARCH</label>
+			</div>
+		</div>
+		
+	</div>
+	<div class="row map-data-row">
+		<div class="col-md-8">
+			
+		</div>
+		<div class="col-md-4">
+			<div id="mapContainer">
+				MAP AREA
+			</div>
+		</div>
+	</div>
 </div>
-
-
-
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNcIZ2bS9v-VR5NF_rgpJPvO2ckdIoS7k&callback=initMap"></script>
-
 <script src="js/map-access.js"></script>

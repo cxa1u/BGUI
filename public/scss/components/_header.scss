@@ -26,6 +26,12 @@
             @media (max-width: $screen-xs-max) {
                 text-align: center;
             }
+
+            @media (max-width: $screen-xs) {
+                font-size: 1.5rem;
+            }
+
+
         }
 
         button.top-q-link-inner {
