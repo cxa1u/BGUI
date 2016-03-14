@@ -34,6 +34,6 @@ app.get('/', function(req, res) {
 
 
 
-server = http.createServer(app).listen(5555, function() {
+server = http.createServer(app).listen(process.env.PORT || 5000, function() {
     console.log("Express server listening on port " + 5555);
 });

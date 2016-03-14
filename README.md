@@ -70,4 +70,3 @@ require('jit-grunt')(grunt)({
   pluginsRoot: 'other/dir'
 }); 
 
-
