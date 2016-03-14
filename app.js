@@ -27,7 +27,7 @@ app.engine('html', require('ejs').renderFile);
 
 // use res.render to load up an ejs view file
 
-// index page 
+// index page
 app.get('/', function(req, res) {
 	res.render('index.html');
 });
@@ -35,5 +35,5 @@ app.get('/', function(req, res) {
 
 
 server = http.createServer(app).listen(process.env.PORT || 5000, function() {
-    console.log("Express server listening on port " + 5555);
+    console.log("BGUI app listening on port " + 5555);
 });
