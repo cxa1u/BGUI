@@ -32,8 +32,6 @@ app.get('/', function(req, res) {
 	res.render('index.html');
 });
 
-
-
 server = http.createServer(app).listen(process.env.PORT || 5000, function() {
-    console.log("BGUI app listening on port " + 5555);
+    console.log("BGUI app listening on port " + 5000);
 });
