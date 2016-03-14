@@ -45,6 +45,8 @@ javascript beautify
 
 --Bower configurations : .bowerrc, bower.json
 
+Need to add Travis configs
+
 
 
 Grunt definitions :
