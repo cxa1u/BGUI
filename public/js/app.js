@@ -22,8 +22,7 @@ angular
 
         $urlRouterProvider.otherwise('/');
 
-        $stateProvider
-        .state('root', {
+        $stateProvider.state('root', {
             abstract: true,
             url: "",
             views: {
@@ -40,19 +39,9 @@ angular
             views: {
                 'content@': {
                     templateUrl: 'views/nonauth/home.html',
-                    controller: "HomeCtrl as homeCtrl"
+                    controller: "HomeController as homeCtrl"
                 }
             },
             secured: false
         })
-        // .state('root.signin', {
-        //     url: '/signin',
-        //     views: {
-        //         'content@': {
-        //             templateUrl: 'views/nonauth/signin.html',
-        //             controller: "signinController as signinCtrl"
-        //         }
-        //     },
-        //     secured: false
-        // })
     });

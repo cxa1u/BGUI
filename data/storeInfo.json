@@ -1,0 +1,154 @@
+{
+    "restaurantId": 8,
+    "name": "St. Francis Winery & Vineyards",
+    "websiteUrl": "",
+    "altWebsiteUrl": "www.bitegate.net/bgPYTHIAN",
+    "phone": {
+        "phoneId": 6,
+        "areaCode": "995",
+        "exchange": "942",
+        "line": "7373",
+        "extension": "942"
+    },
+    "fax": {
+        "phoneId": 7,
+        "areaCode": "",
+        "exchange": "",
+        "line": "",
+        "extension": ""
+    },
+    "address": {
+        "addressId": 11,
+        "addressLine1": "100 PYTHIAN RD",
+        "addressLine2": "",
+        "city": "SANTA ROSA",
+        "state": "CA",
+        "country": "US",
+        "zipCode": "95409",
+        "geoCode": {
+            "latitude": "38.436890",
+            "longitude": "-122.576630"
+        }
+    },
+    "openDays": [{
+        "dayOfWeek": "MONDAY",
+        "openHours": [{
+            "openAt": {
+                "hour": 0,
+                "minute": 15,
+                "second": 0,
+                "nano": 0
+            },
+            "closeAt": {
+                "hour": 23,
+                "minute": 45,
+                "second": 0,
+                "nano": 0
+            }
+        }]
+    }, {
+        "dayOfWeek": "TUESDAY",
+        "openHours": [{
+            "openAt": {
+                "hour": 0,
+                "minute": 15,
+                "second": 0,
+                "nano": 0
+            },
+            "closeAt": {
+                "hour": 23,
+                "minute": 45,
+                "second": 0,
+                "nano": 0
+            }
+        }]
+    }, {
+        "dayOfWeek": "WEDNESDAY",
+        "openHours": [{
+            "openAt": {
+                "hour": 0,
+                "minute": 15,
+                "second": 0,
+                "nano": 0
+            },
+            "closeAt": {
+                "hour": 23,
+                "minute": 45,
+                "second": 0,
+                "nano": 0
+            }
+        }]
+    }, {
+        "dayOfWeek": "THURSDAY",
+        "openHours": [{
+            "openAt": {
+                "hour": 0,
+                "minute": 15,
+                "second": 0,
+                "nano": 0
+            },
+            "closeAt": {
+                "hour": 23,
+                "minute": 45,
+                "second": 0,
+                "nano": 0
+            }
+        }]
+    }, {
+        "dayOfWeek": "FRIDAY",
+        "openHours": [{
+            "openAt": {
+                "hour": 0,
+                "minute": 15,
+                "second": 0,
+                "nano": 0
+            },
+            "closeAt": {
+                "hour": 23,
+                "minute": 45,
+                "second": 0,
+                "nano": 0
+            }
+        }]
+    }, {
+        "dayOfWeek": "SATURDAY",
+        "openHours": [{
+            "openAt": {
+                "hour": 0,
+                "minute": 15,
+                "second": 0,
+                "nano": 0
+            },
+            "closeAt": {
+                "hour": 23,
+                "minute": 45,
+                "second": 0,
+                "nano": 0
+            }
+        }]
+    }, {
+        "dayOfWeek": "SUNDAY",
+        "openHours": [{
+            "openAt": {
+                "hour": 0,
+                "minute": 15,
+                "second": 0,
+                "nano": 0
+            },
+            "closeAt": {
+                "hour": 23,
+                "minute": 45,
+                "second": 0,
+                "nano": 0
+            }
+        }]
+    }],
+    "ethnicity": null,
+    "logoUrl": null,
+    "pickupAvailable": false,
+    "deliveryAvailable": false,
+    "openNow": false,
+    "openForPickupNow": false,
+    "openForDeliveryNow": false
+}
+

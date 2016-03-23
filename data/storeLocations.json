@@ -1,0 +1,577 @@
+{
+    "totalPages": 1,
+    "totalRestuarantsSize": 3,
+    "pageNumber": 0,
+    "pageRestaurantsSize": 3,
+    "restaurants": [{
+        "restaurantId": 2,
+        "name": "Yallamedi",
+        "websiteUrl": "www.yallamedi.com",
+        "altWebsiteUrl": "www.bitegate.net/bgYallamediCRESCENT",
+        "phone": {
+            "phoneId": 2,
+            "areaCode": "925",
+            "exchange": "825",
+            "line": "8644",
+            "extension": "825"
+        },
+        "fax": null,
+        "address": {
+            "addressId": 1,
+            "addressLine1": "55 CRESCENT DR",
+            "addressLine2": "STE F",
+            "city": "PLEASANT HILL",
+            "state": "CA",
+            "country": "US",
+            "zipCode": "94523",
+            "geoCode": {
+                "latitude": "37.946056",
+                "longitude": "-122.062187"
+            },
+            "timeZone": "PST"
+        },
+        "openDays": [{
+            "dayOfWeek": "MONDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 1,
+                    "minute": 0,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 11,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }, {
+                "openAt": {
+                    "hour": 12,
+                    "minute": 15,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "TUESDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 1,
+                    "minute": 0,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 11,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }, {
+                "openAt": {
+                    "hour": 12,
+                    "minute": 15,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "WEDNESDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 1,
+                    "minute": 0,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 11,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }, {
+                "openAt": {
+                    "hour": 12,
+                    "minute": 15,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "THURSDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 1,
+                    "minute": 0,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 11,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }, {
+                "openAt": {
+                    "hour": 12,
+                    "minute": 15,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "FRIDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 1,
+                    "minute": 0,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 11,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }, {
+                "openAt": {
+                    "hour": 12,
+                    "minute": 15,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "SATURDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 1,
+                    "minute": 0,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 11,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }, {
+                "openAt": {
+                    "hour": 12,
+                    "minute": 15,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "SUNDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 1,
+                    "minute": 0,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 11,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }, {
+                "openAt": {
+                    "hour": 12,
+                    "minute": 15,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }],
+        "ethnicity": {
+            "primary": "Mediterranean",
+            "secondary": "",
+            "other": ""
+        },
+        "logoUrl": null,
+        "pickupAvailable": false,
+        "deliveryAvailable": false,
+        "openNow": true,
+        "openForPickupNow": false,
+        "openForDeliveryNow": false,
+        "timeUntilClose": {
+            "hours": 2,
+            "minutes": 45,
+            "seconds": 8
+        },
+        "distance": 0.0
+    }, {
+        "restaurantId": 8,
+        "name": "St. Francis Winery & Vineyards",
+        "websiteUrl": "",
+        "altWebsiteUrl": "www.bitegate.net/bgPYTHIAN",
+        "phone": {
+            "phoneId": 6,
+            "areaCode": "995",
+            "exchange": "942",
+            "line": "7373",
+            "extension": "942"
+        },
+        "fax": {
+            "phoneId": 7,
+            "areaCode": "",
+            "exchange": "",
+            "line": "",
+            "extension": ""
+        },
+        "address": {
+            "addressId": 11,
+            "addressLine1": "100 PYTHIAN RD",
+            "addressLine2": "",
+            "city": "SANTA ROSA",
+            "state": "CA",
+            "country": "US",
+            "zipCode": "95409",
+            "geoCode": {
+                "latitude": "38.436890",
+                "longitude": "-122.576630"
+            },
+            "timeZone": "PST"
+        },
+        "openDays": [{
+            "dayOfWeek": "MONDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 0,
+                    "minute": 15,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "TUESDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 0,
+                    "minute": 15,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "WEDNESDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 0,
+                    "minute": 15,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "THURSDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 0,
+                    "minute": 15,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "FRIDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 0,
+                    "minute": 15,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "SATURDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 0,
+                    "minute": 15,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "SUNDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 0,
+                    "minute": 15,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }],
+        "ethnicity": null,
+        "logoUrl": null,
+        "pickupAvailable": false,
+        "deliveryAvailable": false,
+        "openNow": true,
+        "openForPickupNow": false,
+        "openForDeliveryNow": false,
+        "timeUntilClose": {
+            "hours": 2,
+            "minutes": 45,
+            "seconds": 8
+        },
+        "distance": 0.0
+    }, {
+        "restaurantId": 11,
+        "name": "Chutneys",
+        "websiteUrl": "",
+        "altWebsiteUrl": "www.bitegate.net/bgChutneysGATEWAY",
+        "phone": {
+            "phoneId": 13,
+            "areaCode": "789",
+            "exchange": "456",
+            "line": "1234",
+            "extension": "456"
+        },
+        "fax": {
+            "phoneId": 24,
+            "areaCode": "650",
+            "exchange": "240",
+            "line": "4400",
+            "extension": "240"
+        },
+        "address": {
+            "addressId": 13,
+            "addressLine1": "2033 GATEWAY PL",
+            "addressLine2": "STE 100",
+            "city": "SAN JOSE",
+            "state": "CA",
+            "country": "US",
+            "zipCode": "95110",
+            "geoCode": {
+                "latitude": "37.371094",
+                "longitude": "-121.925575"
+            },
+            "timeZone": "PST"
+        },
+        "openDays": [{
+            "dayOfWeek": "MONDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 2,
+                    "minute": 30,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "TUESDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 2,
+                    "minute": 30,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "WEDNESDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 2,
+                    "minute": 30,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "THURSDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 2,
+                    "minute": 30,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "FRIDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 2,
+                    "minute": 30,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "SATURDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 2,
+                    "minute": 30,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }, {
+            "dayOfWeek": "SUNDAY",
+            "openHours": [{
+                "openAt": {
+                    "hour": 2,
+                    "minute": 30,
+                    "second": 0,
+                    "nano": 0
+                },
+                "closeAt": {
+                    "hour": 23,
+                    "minute": 45,
+                    "second": 0,
+                    "nano": 0
+                }
+            }]
+        }],
+        "ethnicity": {
+            "primary": "Cambodian",
+            "secondary": "Cajun/Creole",
+            "other": "Chicken Wings"
+        },
+        "logoUrl": null,
+        "pickupAvailable": false,
+        "deliveryAvailable": false,
+        "openNow": true,
+        "openForPickupNow": false,
+        "openForDeliveryNow": false,
+        "timeUntilClose": {
+            "hours": 2,
+            "minutes": 45,
+            "seconds": 8
+        },
+        "distance": 0.0
+    }]
+}

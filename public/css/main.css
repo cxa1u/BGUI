@@ -10754,6 +10754,18 @@ body {
   background: url("../images/BG_2.35-58.png") no-repeat;
 }
 
+/* line 5, ../scss/components/_home.scss */
+#zipcodeInputCtrl {
+  border: 0;
+}
+
+/* line 9, ../scss/components/_home.scss */
+.search-submit-img {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
 /* line 1, ../scss/components/_section.scss */
 #appSection {
   min-height: calc(100% - 300px);

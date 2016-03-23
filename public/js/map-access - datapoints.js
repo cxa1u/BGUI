@@ -4,7 +4,6 @@ var map, posObjArray = [{}, {}, {}, {}];
 
 var geocoder, popup;
 
-
 function initMap() {
 
     google.maps.visualRefresh = true;
@@ -19,14 +18,22 @@ function initMap() {
     posObjArray[3].position = new google.maps.LatLng(37.3891982, -121.9858969);
     posObjArray[3].icon = "images/marker_green.png";
 
-   
-    
-    //generateMarkers(posObjArray, map);
-    
+    var mapOptions = {
+        backgroundColor: "#CADFAA",
+        center: new google.maps.LatLng(37.3831663, -121.9972578),
+        zoom: 10,
+        mapTypeControl: false,
+        mapTypeControlOptions: {
+            mapTypeIds: [google.maps.MapTypeId.ROADMAP]
+        },
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
 
+    var mapElement = document.getElementById('mapContainer');
+    map = new google.maps.Map(mapElement, mapOptions);
+    //generateMarkers(posObjArray, map);
     geocoder = new google.maps.Geocoder();
     popup = new google.maps.InfoWindow();
-
     initGlb();
 }
 
@@ -149,9 +156,6 @@ console.log(google.maps.drawing);
         var markerPosition = marker.getPosition();
         //reverse geocode the LatLng object to return the
         //addresses
-
-        console.log(markerPosition);
-
         geocoder.geocode({
                 'latLng': markerPosition
             },
@@ -186,5 +190,3 @@ function showAddressOfResult(result, marker) {
     popup.setContent(popupContent);
     popup.open(map, marker);
 }
-
-
