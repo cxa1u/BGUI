@@ -10485,37 +10485,43 @@ body {
   padding-bottom: 19px;
 }
 
+/* line 56, ../scss/main.scss */
+.logo {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
 /* Custom page footer */
-/* line 57, ../scss/main.scss */
+/* line 61, ../scss/main.scss */
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 63, ../scss/main.scss */
+/* line 67, ../scss/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-/* line 68, ../scss/main.scss */
+/* line 72, ../scss/main.scss */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 72, ../scss/main.scss */
+/* line 76, ../scss/main.scss */
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
 /* Supporting marketing content */
-/* line 79, ../scss/main.scss */
+/* line 83, ../scss/main.scss */
 .marketing {
   margin: 40px 0;
 }
-/* line 82, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
@@ -10523,7 +10529,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
-  /* line 91, ../scss/main.scss */
+  /* line 95, ../scss/main.scss */
   .header,
   .marketing,
   .footer {
@@ -10532,13 +10538,13 @@ body {
   }
 
   /* Space out the masthead */
-  /* line 98, ../scss/main.scss */
+  /* line 102, ../scss/main.scss */
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 102, ../scss/main.scss */
+  /* line 106, ../scss/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
@@ -10565,22 +10571,27 @@ body {
   transform: translateY(-50%);
 }
 
-/* line 3, ../scss/components/_header.scss */
+/* line 2, ../scss/components/_header.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 5, ../scss/components/_header.scss */
 .top-fixed-header {
   background-color: #120f16;
 }
-/* line 6, ../scss/components/_header.scss */
+/* line 8, ../scss/components/_header.scss */
 .top-fixed-header .top-q-link {
   min-height: 60px;
 }
 @media (max-width: 767px) {
-  /* line 6, ../scss/components/_header.scss */
+  /* line 8, ../scss/components/_header.scss */
   .top-fixed-header .top-q-link {
     padding-top: 10px;
     text-align: center;
   }
 }
-/* line 14, ../scss/components/_header.scss */
+/* line 16, ../scss/components/_header.scss */
 .top-fixed-header .top-q-link .top-q-link-inner {
   margin: 0;
   padding: 0;
@@ -10593,7 +10604,7 @@ body {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 14, ../scss/components/_header.scss */
+  /* line 16, ../scss/components/_header.scss */
   .top-fixed-header .top-q-link .top-q-link-inner {
     position: absolute;
     top: 50%;
@@ -10601,18 +10612,18 @@ body {
   }
 }
 @media (max-width: 767px) {
-  /* line 14, ../scss/components/_header.scss */
+  /* line 16, ../scss/components/_header.scss */
   .top-fixed-header .top-q-link .top-q-link-inner {
     text-align: center;
   }
 }
 @media (max-width: 480px) {
-  /* line 14, ../scss/components/_header.scss */
+  /* line 16, ../scss/components/_header.scss */
   .top-fixed-header .top-q-link .top-q-link-inner {
     font-size: 1.5rem;
   }
 }
-/* line 37, ../scss/components/_header.scss */
+/* line 39, ../scss/components/_header.scss */
 .top-fixed-header .top-q-link button.top-q-link-inner {
   font-size: 1.5rem;
   height: 30px;
@@ -10629,7 +10640,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4b2a', endColorstr='#f37c37', GradientType=1 );
 }
 
-/* line 55, ../scss/components/_header.scss */
+/* line 57, ../scss/components/_header.scss */
 .navbar-toggle-menu-title {
   float: left;
   color: #fff;
@@ -10638,28 +10649,28 @@ body {
   font-size: 2.1rem;
 }
 
-/* line 63, ../scss/components/_header.scss */
+/* line 65, ../scss/components/_header.scss */
 .mainmenu-area {
   background: none;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* line 68, ../scss/components/_header.scss */
+/* line 70, ../scss/components/_header.scss */
 .transp-menu-link {
   padding-top: 1.5rem;
 }
-/* line 71, ../scss/components/_header.scss */
+/* line 73, ../scss/components/_header.scss */
 .transp-menu-link a {
   font-family: "TeXGyreReg";
   color: #fff;
   margin-left: 20px;
   padding: 2px 5px;
 }
-/* line 77, ../scss/components/_header.scss */
+/* line 79, ../scss/components/_header.scss */
 .transp-menu-link a:hover, .transp-menu-link a:active {
   text-decoration: none;
 }
-/* line 81, ../scss/components/_header.scss */
+/* line 83, ../scss/components/_header.scss */
 .transp-menu-link a:last-child {
   border: 1px solid #fff;
 }
@@ -10674,31 +10685,26 @@ body {
 }
 
 /* line 9, ../scss/components/_footer.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 13, ../scss/components/_footer.scss */
 .footer-top-area {
   background-color: #FFFEFF;
   padding: 0;
 }
 
-/* line 18, ../scss/components/_footer.scss */
+/* line 14, ../scss/components/_footer.scss */
 .footer-menu {
   margin-top: 2rem;
 }
-/* line 21, ../scss/components/_footer.scss */
+/* line 17, ../scss/components/_footer.scss */
 .footer-menu .footer-menu-link {
   padding: 0;
   height: 40px;
   text-align: center;
 }
-/* line 26, ../scss/components/_footer.scss */
+/* line 22, ../scss/components/_footer.scss */
 .footer-menu .footer-menu-link:last-child a {
   border-right: 0;
 }
-/* line 30, ../scss/components/_footer.scss */
+/* line 26, ../scss/components/_footer.scss */
 .footer-menu .footer-menu-link a {
   font-size: 2.4rem;
   color: #120f16;
@@ -10706,7 +10712,7 @@ html, body {
   padding: 0;
 }
 @media (max-width: 767px) {
-  /* line 30, ../scss/components/_footer.scss */
+  /* line 26, ../scss/components/_footer.scss */
   .footer-menu .footer-menu-link a {
     font-size: 1.5rem;
   }
@@ -10719,30 +10725,30 @@ html, body {
 .footer-menu .reset-row .reset-col {
   padding: 0;
 }
-/* line 45, ../scss/components/_footer.scss */
+/* line 41, ../scss/components/_footer.scss */
 .footer-menu .footer-submenu-link {
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 45, ../scss/components/_footer.scss */
+  /* line 41, ../scss/components/_footer.scss */
   .footer-menu .footer-submenu-link {
     width: 18%;
   }
 }
 @media (min-width: 768px) {
-  /* line 52, ../scss/components/_footer.scss */
+  /* line 48, ../scss/components/_footer.scss */
   .footer-menu .footer-submenu-link:first-child {
     margin-left: 7%;
   }
 }
 
-/* line 60, ../scss/components/_footer.scss */
+/* line 56, ../scss/components/_footer.scss */
 .footer-social-menu {
   margin-top: 3rem;
   text-align: center;
 }
 
-/* line 65, ../scss/components/_footer.scss */
+/* line 61, ../scss/components/_footer.scss */
 .footer-right-menu {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -10751,15 +10757,19 @@ html, body {
 
 /* line 1, ../scss/components/_home.scss */
 body {
-  background: url("../images/BG_2.35-58.png") no-repeat;
+  background: #000000 url("../images/BG_2.35-58.png") no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-/* line 5, ../scss/components/_home.scss */
+/* line 9, ../scss/components/_home.scss */
 #zipcodeInputCtrl {
   border: 0;
 }
 
-/* line 9, ../scss/components/_home.scss */
+/* line 13, ../scss/components/_home.scss */
 .search-submit-img {
   position: absolute;
   top: 2px;

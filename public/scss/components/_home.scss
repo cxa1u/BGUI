@@ -1,5 +1,9 @@
 body {
-	background: url("../images/BG_2.35-58.png") no-repeat;
+	background: #000000 url("../images/BG_2.35-58.png") no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #zipcodeInputCtrl {
