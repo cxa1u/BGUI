@@ -10681,30 +10681,29 @@ html, body {
   bottom: 0px;
   min-height: 180px;
   width: 100%;
-  background: #fff;
 }
 
-/* line 9, ../scss/components/_footer.scss */
+/* line 8, ../scss/components/_footer.scss */
 .footer-top-area {
   background-color: #FFFEFF;
   padding: 0;
 }
 
-/* line 14, ../scss/components/_footer.scss */
+/* line 13, ../scss/components/_footer.scss */
 .footer-menu {
   margin-top: 2rem;
 }
-/* line 17, ../scss/components/_footer.scss */
+/* line 16, ../scss/components/_footer.scss */
 .footer-menu .footer-menu-link {
   padding: 0;
   height: 40px;
   text-align: center;
 }
-/* line 22, ../scss/components/_footer.scss */
+/* line 21, ../scss/components/_footer.scss */
 .footer-menu .footer-menu-link:last-child a {
   border-right: 0;
 }
-/* line 26, ../scss/components/_footer.scss */
+/* line 25, ../scss/components/_footer.scss */
 .footer-menu .footer-menu-link a {
   font-size: 2.4rem;
   color: #120f16;
@@ -10712,7 +10711,7 @@ html, body {
   padding: 0;
 }
 @media (max-width: 767px) {
-  /* line 26, ../scss/components/_footer.scss */
+  /* line 25, ../scss/components/_footer.scss */
   .footer-menu .footer-menu-link a {
     font-size: 1.5rem;
   }
@@ -10725,30 +10724,30 @@ html, body {
 .footer-menu .reset-row .reset-col {
   padding: 0;
 }
-/* line 41, ../scss/components/_footer.scss */
+/* line 40, ../scss/components/_footer.scss */
 .footer-menu .footer-submenu-link {
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 41, ../scss/components/_footer.scss */
+  /* line 40, ../scss/components/_footer.scss */
   .footer-menu .footer-submenu-link {
     width: 18%;
   }
 }
 @media (min-width: 768px) {
-  /* line 48, ../scss/components/_footer.scss */
+  /* line 47, ../scss/components/_footer.scss */
   .footer-menu .footer-submenu-link:first-child {
     margin-left: 7%;
   }
 }
 
-/* line 56, ../scss/components/_footer.scss */
+/* line 55, ../scss/components/_footer.scss */
 .footer-social-menu {
   margin-top: 3rem;
   text-align: center;
 }
 
-/* line 61, ../scss/components/_footer.scss */
+/* line 60, ../scss/components/_footer.scss */
 .footer-right-menu {
   margin-top: 2rem;
   margin-bottom: 2rem;
