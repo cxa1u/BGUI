@@ -15,3 +15,22 @@ body {
 	top:2px;
 	right: 2px;
 }
+
+.advanced-search-container {
+	position: relative;
+	height: 300px; 
+	padding:20px; 
+	background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0; 
+	color: #fff;
+	.close-icon {
+		top: 5px;
+		position: absolute;
+		right: 20px;
+		z-index: 200;
+		.close {
+			font-size: 40px;
+			opacity: 1;
+			color: #fff;
+		}
+	}
+}

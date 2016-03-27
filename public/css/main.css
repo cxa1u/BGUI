@@ -10776,6 +10776,28 @@ body {
   right: 2px;
 }
 
+/* line 19, ../scss/components/_home.scss */
+.advanced-search-container {
+  position: relative;
+  height: 300px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  color: #fff;
+}
+/* line 25, ../scss/components/_home.scss */
+.advanced-search-container .close-icon {
+  top: 5px;
+  position: absolute;
+  right: 20px;
+  z-index: 200;
+}
+/* line 30, ../scss/components/_home.scss */
+.advanced-search-container .close-icon .close {
+  font-size: 40px;
+  opacity: 1;
+  color: #fff;
+}
+
 /* line 1, ../scss/components/_section.scss */
 #appSection {
   min-height: calc(100% - 300px);
@@ -10877,7 +10899,7 @@ h3.location-title {
   background: url("../images/BG_2.35-62.png") no-repeat;
   background-color: rgba(15, 13, 15, 0.3);
   background-position: 0 100%;
-  min-height: 382px;
+  min-height: 383px;
   width: 100%;
   margin-bottom: 10px;
 }
