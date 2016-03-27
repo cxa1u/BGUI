@@ -29,8 +29,6 @@ angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler',
                     self.advSearchParams['zipCode'] = addressObj.postal_code;
                     self.advSearchParams['city'] = addressObj.locality;
                     self.advSearchParams['state'] = addressObj.administrative_area_level_1;
-
-
                     //Initial render
                     self.renderStores(self.zipCode);
                 });

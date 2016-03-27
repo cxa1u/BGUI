@@ -124,7 +124,7 @@
                             <div class="v-center">0.2MI</div>
                         </div>
                         <div class="col-xs-3 reset-col dir" ng-click="homeCtrl.renderDirectionLine(store.address.geoCode.latitude, store.address.geoCode.longitude, store.marker)">
-                            DIRECTIONS
+                            <a ng-href="https://maps.google.com/maps?saddr={{store.address.geoCode.latitude}},{{store.address.geoCode.longitude}}" target="_blank">DIRECTIONS</a>
                         </div>
                         <div class="col-xs-2 reset-col status">{{store.openNow ? "OPEN" : "CLOSED"}}</div>
                     </div>
