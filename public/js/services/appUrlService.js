@@ -1,12 +1,12 @@
-angular.module('ufaasApp').factory('appUrlService', [ function() {
+angular.module('BGUI').factory('appUrlService', [function() {
 
     
-        
-        console.log("hello");
 
         return {
         	getStoreLocations : "/getStoreLocations",
-        	getStoreInfo : "/getStoreInfo"
+        	getStoreInfo : "/getStoreInfo",
+        	getStoresByZip: "/getStoreLocations"       //http://api.bitegate.net/v1/restaurants"
+
         };
     }
 ]);

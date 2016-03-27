@@ -1,16 +1,6 @@
-'use strict';
-
-/**
- * @ngdoc overview
- * @name ufaasApp
- * @description
- * # ufaasApp
- *
- * Main module of the application.
- */
 
 angular
-    .module('ufaasApp', [
+    .module('BGUI', [
         'ngAnimate',
         'ngAria',
         'ngCookies',

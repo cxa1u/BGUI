@@ -38,15 +38,26 @@ app.get('/', function(req, res) {
 
 //Initial map search api response
 
-app.get('/getStoreLocations', function(req, res) {
-	res.json(storeLocations);
-});
+// app.get('/getStoreLocations', function(req, res) {
+// 	res.json(storeLocations);
+// });
 
 
 app.get('/getStoreInfo/:storeId', function(req, res) {
 	console.log("Requested store :", req.params.storeId);
 	res.json(storeInfo);
+});
 
+app.get('/getStoreLocations', function(req, res) {
+	var zipCode = req.query.zipCode;
+	console.log("Requested store :", req.query.zipCode);
+	var stores = [];
+	for(var i=0; i< storeLocations.restaurants.length; i++){
+		if(storeLocations.restaurants[i].address.zipCode == zipCode){
+			stores.push(storeLocations.restaurants[i]);
+		}
+	}
+	res.json(stores);
 });
 
 var appPort = process.env.PORT || 5000;

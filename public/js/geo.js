@@ -1,4 +1,4 @@
-var markers = [],
+/*var markers = [],
     geocoder = new google.maps.Geocoder(),
     popup = new google.maps.InfoWindow(),
     directionsService = new google.maps.DirectionsService(),
@@ -171,4 +171,4 @@ function makeMarker( position, icon, title ) {
     icon: icon,
     title: title
    });
-}
+}*/

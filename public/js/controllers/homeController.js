@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * @ngdoc function
  * @name ufaasApp.controller:HomeController
@@ -7,21 +5,85 @@
  * # HomeController
  * Controller of the ufaasApp
  */
-angular.module('ufaasApp').controller('HomeController', ['apiService',
-    function(apiService) {
+angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler', '$scope','mapHandler',
+    function(apiService, geoHandler, $scope, mapHandler) {
 
         var self = this,
             positionArray = [];
-
-        this.zipcode = ""; //Default serch zipcode
+        this.zipCode = "";
         this.storeLocations = [];
 
-        intializeMap();
+        geoHandler.intializeMap(function(userPosition) {
+            geoHandler.getAddressByLatLng(userPosition, function(addressObj) {
+                console.log(addressObj);
+                $scope.$apply(function() {
+                    self.zipCode = addressObj.postal_code;
+                    self.city = addressObj.locality;
+                    self.state = addressObj.administrative_area_level_1;
+                    //Initial render
+                    self.renderStores(self.zipCode);
+                });
+            });
+        });
 
 
-        this.searchStores = function(zipcode) {
+        this.searchStoresByZip = function(zipCode) {
+           if($.trim(zipCode)){
 
-            console.log(generateMarkers);
+
+            self.renderStores(self.zipCode);
+
+            return;
+
+            geoHandler.markCurrentPosition(function(userPosition){
+                geoHandler.getAddressByLatLng(userPosition, function(addressObj) {
+                console.log(addressObj);
+                    $scope.$apply(function() {
+                        self.city = addressObj.locality;
+                        self.state = addressObj.administrative_area_level_1;
+                        //Initial render
+                        self.renderStores(self.zipCode);
+                    });
+                });
+            });
+            self.renderStores(zipCode);
+           }else{
+                console.info("Please enter valid zipcode")
+           }  
+        }
+
+
+
+        this.renderStores = function(zipcode){
+            
+                
+                apiService.getStoresByZip(zipcode, function(storeData) {
+                    if (storeData.length) {
+                        self.storeLocations = storeData;
+                        
+                        var i;
+                        for (i = 0; i < storeData.length; i++) {
+
+                            var lat = storeData[i].address.geoCode.latitude;
+                            var lng = storeData[i].address.geoCode.longitude;
+                            positionArray.push({
+                                position: new google.maps.LatLng(lat, lng),
+                                icon: "images/marker_green.png"
+                            });
+                           //storeData.restaurants[i].marker = generateMarkers(positionArray, map);
+                        }
+                        geoHandler.generateMarkers(positionArray, mapHandler.map);
+                        geoHandler.focusLocation(positionArray[0].position);
+                    }
+                });
+        }
+
+
+
+
+
+
+        this.searchStores2 = function(zipcode) {
 
             //if($.trim(zipcode)){
 
@@ -51,8 +113,8 @@ angular.module('ufaasApp').controller('HomeController', ['apiService',
 
 
         this.renderDirectionLine = function(lat, lng, marker) {
-        
-        	console.log(marker);
+
+            console.log(marker);
             // var latLngObj = new google.maps.LatLng(lat, lng);
 
             // var marker = new google.maps.Marker({
