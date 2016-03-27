@@ -60,6 +60,10 @@ app.get('/getStoreLocations', function(req, res) {
 	res.json(stores);
 });
 
+app.get('/searchStores', function(req, res){
+	res.json(storeLocations.restaurants);
+});
+
 var appPort = process.env.PORT || 5000;
 server = http.createServer(app).listen(appPort, function() {
     console.log("BGUI app listening on port " + appPort);

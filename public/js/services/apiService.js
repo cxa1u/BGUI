@@ -47,10 +47,15 @@ angular.module('BGUI').factory('apiService', ['$http','appUrlService', function(
                 }).then(function(resp){
                    cb(resp.data);
                 })  
+            },
+
+            searchStores : function(params, cb){
+                $http.get(appUrlService.searchStores, {
+                    params : params
+                }).then(function(resp){
+                    cb(resp.data);
+                });;
             }
-
-
-
 
         }
     }

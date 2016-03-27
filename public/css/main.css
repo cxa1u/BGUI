@@ -10798,6 +10798,16 @@ body {
   color: #fff;
 }
 
+/* line 38, ../scss/components/_home.scss */
+.search-submit-container {
+  margin-top: 40px;
+}
+/* line 40, ../scss/components/_home.scss */
+.search-submit-container button {
+  min-width: 150px;
+  width: 60%;
+}
+
 /* line 1, ../scss/components/_section.scss */
 #appSection {
   min-height: calc(100% - 300px);
