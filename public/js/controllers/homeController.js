@@ -15,7 +15,7 @@ angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler',
         };
         this.zipCode = "";
         this.storeLocations = [];
-        this.isCollapsed = false;
+        this.isCollapsed = true;
         this.distanceTitle = 'Select';
         this.distanceSet = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "20"];
 
