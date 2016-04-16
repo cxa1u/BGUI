@@ -35,6 +35,12 @@ angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler',
             });
         });
 
+        this.setDefaultDistance = function(e) {
+            e.preventDefault();
+            this.distanceTitle = "Select";
+            this.updateSearchParams('distance', "");
+        };
+
         this.setDistance = function(event, selectedDistance) {
             event.preventDefault();
             this.distanceTitle = selectedDistance;

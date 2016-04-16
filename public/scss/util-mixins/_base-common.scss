@@ -33,3 +33,47 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+@mixin half-orange-gradient {
+    background: rgba(222, 75, 42, 1);
+    background: -moz-linear-gradient(left, rgba(222, 75, 42, 1) 0%, rgba(243, 124, 55, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(222, 75, 42, 1)), color-stop(100%, rgba(243, 124, 55, 1)));
+    background: -webkit-linear-gradient(left, rgba(222, 75, 42, 1) 0%, rgba(243, 124, 55, 1) 100%);
+    background: -o-linear-gradient(left, rgba(222, 75, 42, 1) 0%, rgba(243, 124, 55, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(222, 75, 42, 1) 0%, rgba(243, 124, 55, 1) 100%);
+    background: linear-gradient(to right, rgba(222, 75, 42, 1) 0%, rgba(243, 124, 55, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4b2a', endColorstr='#f37c37', GradientType=1 );
+}
+
+.n-border-radius {
+    border-radius : 0;
+}
+
+.n-border-radius-top-left {
+    border-radius : 0;
+}
+
+.n-border-radius-top-right {
+    border-radius : 0;
+}
+
+.n-border-radius-bottom-left {
+    border-radius : 0;
+}
+
+.n-border-radius-bottom-right {
+    border-radius : 0;
+}
+
+
+.btn-orange {
+    background: rgba(222, 75, 42, 1);
+    background: -moz-linear-gradient(left, rgba(222, 75, 42, 1) 0%, rgba(243, 124, 55, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(222, 75, 42, 1)), color-stop(100%, rgba(243, 124, 55, 1)));
+    background: -webkit-linear-gradient(left, rgba(222, 75, 42, 1) 0%, rgba(243, 124, 55, 1) 100%);
+    background: -o-linear-gradient(left, rgba(222, 75, 42, 1) 0%, rgba(243, 124, 55, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(222, 75, 42, 1) 0%, rgba(243, 124, 55, 1) 100%);
+    background: linear-gradient(to right, rgba(222, 75, 42, 1) 0%, rgba(243, 124, 55, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4b2a', endColorstr='#f37c37', GradientType=1 );   
+    border : none;
+}

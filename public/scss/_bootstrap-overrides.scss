@@ -6,3 +6,13 @@
 .navbar-toggle .icon-bar {
 	width: 30px;
 }
+
+.navbar-toggle {
+    border: 0;
+    margin: 10px auto;
+    margin-left: 10px;
+    padding-right: 0;
+}
+.navbar-toggle .icon-bar {
+    background: none repeat scroll 0 0 #ffffff;
+}

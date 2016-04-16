@@ -40,6 +40,7 @@
     	display: inline-block;
     	font-weight: normal;
     	text-shadow: 0px 0px 12px #000;
+        margin-top: 5px;
     }
 }
 
@@ -50,7 +51,7 @@
 
 .home-header {
 	font-size: 60px;
-	text-shadow: 0px 0px 12px #000;
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.75);
 
     @media (max-width: $screen-xs) {
         font-size: 3.5rem;
@@ -59,7 +60,7 @@
 
 .home-sub-header {
 	font-size: 25px;
-	text-shadow: 0px 0px 12px #000;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.75);
 	@media (max-width: $screen-xs) {
         font-size: 1.9rem;
     }		
@@ -80,7 +81,6 @@ h3.location-title {
     background-position: 0 100%;
     min-height: 383px;
     width: 100%;
-    margin-bottom : 10px;
 }
 
 /* .location-table-wrapper {

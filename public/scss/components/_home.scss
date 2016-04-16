@@ -1,44 +1,58 @@
 body {
-	background: #000000 url("../images/BG_2.35-58.png") no-repeat fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+    background: #000000 url("../images/BG_2.35-58.png") no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #zipcodeInputCtrl {
-	border: 0;
+    border: 0;
 }
 
 .search-submit-img {
-	position: absolute;
-	top:2px;
-	right: 2px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
 }
 
 .advanced-search-container {
-	position: relative;
-	height: 300px; 
-	padding:20px; 
-	background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0; 
-	color: #fff;
-	.close-icon {
-		top: 5px;
-		position: absolute;
-		right: 20px;
-		z-index: 200;
-		.close {
-			font-size: 40px;
-			opacity: 1;
-			color: #fff;
-		}
-	}
+    position: relative;
+    height: 300px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    color: #fff;
+
+    .close-icon {
+        top: 5px;
+        position: absolute;
+        right: 20px;
+        z-index: 200;
+
+        .close {
+            font-size: 30px;
+            opacity: 1;
+            color: #fff;
+            font-weight: 400;
+        }
+    }
 }
 
 .search-submit-container {
-	margin-top: 40px;
-	button {
-		min-width: 150px;
-		width: 60%;
-	}
+    margin-top: 40px;
+
+    button {
+        min-width: 150px;
+        width: 60%;
+    }
+}
+
+.distance-container {
+    button {
+        width: 90px;
+    }
+}
+
+#zipcodeInputCtrl {
+	font-size: 18px;
 }
