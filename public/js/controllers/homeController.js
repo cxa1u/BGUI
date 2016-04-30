@@ -8,8 +8,8 @@
 angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler', '$scope', 'mapHandler',
     function(apiService, geoHandler, $scope, mapHandler) {
 
-        var self = this,
-            positionArray = [];
+        var self = this;
+        this.positionArray = [];
         this.advSearchParams = {
 
         };
@@ -48,21 +48,8 @@ angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler',
         };
 
         this.searchStoresByZip = function(zipCode) {
-            if ($.trim(zipCode)) {
-                self.renderStores(self.zipCode);
-                return;
-
-                geoHandler.markCurrentPosition(function(userPosition) {
-                    geoHandler.getAddressByLatLng(userPosition, function(addressObj) {
-                        console.log(addressObj);
-                        $scope.$apply(function() {
-                            self.city = addressObj.locality;
-                            self.state = addressObj.administrative_area_level_1;
-                            //Initial render
-                            self.renderStores(self.zipCode);
-                        });
-                    });
-                });
+            zipCode =Number($.trim(zipCode)); 
+            if (zipCode) {
                 self.renderStores(zipCode);
             } else {
                 console.info("Please enter valid zipcode")
@@ -73,14 +60,16 @@ angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler',
 
         this.renderStores = function(zipcode) {
             apiService.getStoresByZip(zipcode, function(storeData) {
-                if (storeData.length) {
-                    self.storeLocations = storeData;
-
+                
+              var restaurants, positionArray=[];
+                self.storeLocations = 0;
+                if (storeData.restaurants.length) {
+                    self.storeLocations = restaurants = storeData.restaurants;
                     var i;
-                    for (i = 0; i < storeData.length; i++) {
+                    for (i = 0; i < restaurants.length; i++) {
 
-                        var lat = storeData[i].address.geoCode.latitude;
-                        var lng = storeData[i].address.geoCode.longitude;
+                        var lat = restaurants[i].address.geoCode.latitude;
+                        var lng = restaurants[i].address.geoCode.longitude;
                         positionArray.push({
                             position: new google.maps.LatLng(lat, lng),
                             icon: "images/marker_green.png"
@@ -88,7 +77,7 @@ angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler',
                         //storeData.restaurants[i].marker = generateMarkers(positionArray, map);
                     }
                     geoHandler.generateMarkers(positionArray, mapHandler.map);
-                    geoHandler.focusLocation(positionArray[0].position);
+                    geoHandler.focusLocation(mapHandler.map, positionArray[0].position);
                 }
             });
         };

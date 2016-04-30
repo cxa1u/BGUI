@@ -13,7 +13,7 @@ angular.module('BGUI').factory('mapDefaults', [
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             },
             iconSet: {
-            	green : "/images/current-position.png"
+            	blue : "/images/current-position.png"
             }
         }
     }

@@ -1,6 +1,15 @@
 angular.module('BGUI').factory('apiService', ['$http','appUrlService', function($http, appUrlService) {
         
         return {
+            getStoresByZip: function(zipCode, cb) {
+              $http.get(appUrlService.get('stores'), {
+                    params : {
+                        zipCode: zipCode
+                    }
+                }).then(function(resp){
+                   cb(resp.data);
+                })  
+            },
 
         	getStoreLocations : function(zipcode, cb){
         		$http.get(appUrlService.getStoreLocations, {
@@ -23,16 +32,7 @@ angular.module('BGUI').factory('apiService', ['$http','appUrlService', function(
         		})
         	},
 
-            getStoresByZip: function(zipCode, cb) {
 
-              $http.get(appUrlService.getStoresByZip, {
-                    params : {
-                        zipCode: zipCode
-                    }
-                }).then(function(resp){
-                   cb(resp.data);
-                })  
-            },
 
             getStoresByZipJsonp: function(zipCode, cb) {
 

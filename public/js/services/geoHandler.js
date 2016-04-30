@@ -20,7 +20,7 @@ angular.module('BGUI').factory('geoHandler', ['mapHandler', 'mapDefaults', funct
                     var userPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
                     mapHandler.marker = new google.maps.Marker({
                         position: userPosition,
-                        icon: mapDefaults.iconSet.green,
+                        icon: mapDefaults.iconSet.blue,
                     });
                     mapHandler.marker.setMap(mapHandler.map);
                     mapHandler.map.setCenter(userPosition);
@@ -81,19 +81,17 @@ angular.module('BGUI').factory('geoHandler', ['mapHandler', 'mapDefaults', funct
                     if (status == google.maps.GeocoderStatus.OK) {
                         if (results[0]) {
 
+                            console.log(results[0]);
+
                             for (var i = 0; i < results[0].address_components.length; i++) {
                                 var types = results[0].address_components[i].types;
-
-                                    address[types[0]] = results[0].address_components[i].long_name;
-
-
-
-                                for (var typeIdx = 0; typeIdx < types.length; typeIdx++) {
+                                    address[types[0]] = results[0].address_components[i].long_name; 
+                                // for (var typeIdx = 0; typeIdx < types.length; typeIdx++) {
                                     
-                                    if (types[typeIdx] == 'postal_code') {
-                                        //cb(results[0].address_components[i].short_name);
-                                    }
-                                }
+                                //     if (types[typeIdx] == 'postal_code') {
+                                //         //cb(results[0].address_components[i].short_name);
+                                //     }
+                                // }
                             }
                             cb(address);
                         } else {
@@ -131,9 +129,9 @@ angular.module('BGUI').factory('geoHandler', ['mapHandler', 'mapDefaults', funct
             },
 
 
-            focusLocation : function(LatLngObj) {
-                mapHandler.map.setCenter(LatLngObj);
-                mapHandler.map.setZoom(15);
+            focusLocation : function(map, LatLngObj) {
+                map.setCenter(LatLngObj);
+                map.setZoom(15);
             }
 
         }
