@@ -13941,17 +13941,16 @@ body {
   position: relative;
   height: 300px;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
   color: #fff;
 }
-/* line 26, ../scss/components/_home.scss */
+/* line 25, ../scss/components/_home.scss */
 .advanced-search-container .close-icon {
   top: 5px;
   position: absolute;
   right: 20px;
   z-index: 200;
 }
-/* line 32, ../scss/components/_home.scss */
+/* line 31, ../scss/components/_home.scss */
 .advanced-search-container .close-icon .close {
   font-size: 30px;
   opacity: 1;
@@ -13959,28 +13958,196 @@ body {
   font-weight: 400;
 }
 
-/* line 41, ../scss/components/_home.scss */
+/* line 40, ../scss/components/_home.scss */
 .search-submit-container {
   margin-top: 40px;
 }
-/* line 44, ../scss/components/_home.scss */
+/* line 43, ../scss/components/_home.scss */
 .search-submit-container button {
   min-width: 150px;
   width: 60%;
 }
 
-/* line 51, ../scss/components/_home.scss */
+/* line 50, ../scss/components/_home.scss */
 .distance-container button {
   width: 90px;
 }
 
-/* line 56, ../scss/components/_home.scss */
+/* line 55, ../scss/components/_home.scss */
 #zipcodeInputCtrl {
   font-size: 18px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
+/* line 61, ../scss/components/_home.scss */
+.green-brd {
+  border-left: 3px solid #00B74F;
+}
+
+/* line 65, ../scss/components/_home.scss */
+.red-brd {
+  border-left: 3px solid #ba232c;
+}
+
+/* line 69, ../scss/components/_home.scss */
+.yellow-brd {
+  border-left: 3px solid #f78b28;
+}
+
+/* line 73, ../scss/components/_home.scss */
+.address {
+  padding-left: 15px;
+  background-color: #414042;
+}
+
+/* line 78, ../scss/components/_home.scss */
+.record-time {
+  background-color: #414042;
+  font-weight: bold;
+}
+
+/* line 83, ../scss/components/_home.scss */
+.dir {
+  background-color: #C2C1C2;
+}
+
+/* line 87, ../scss/components/_home.scss */
+.row-one {
+  min-height: 30px;
+  height: auto;
+}
+
+/* line 92, ../scss/components/_home.scss */
+.row-two {
+  min-height: 45px;
+  height: auto;
+}
+
+/* line 97, ../scss/components/_home.scss */
+.store-col-head {
+  height: 45px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+/* line 102, ../scss/components/_home.scss */
+.store-col-head.dir {
+  padding-left: 0;
+}
+/* line 105, ../scss/components/_home.scss */
+.store-col-head.dir img {
+  width: 100%;
+  height: 100%;
+  min-height: 45px;
+}
+
+/* line 113, ../scss/components/_home.scss */
+.record-header {
+  font-size: 1.7rem;
+  height: 30px;
+  line-height: 30px;
+}
+
+/* line 119, ../scss/components/_home.scss */
+.record-marker {
+  padding-left: 10px;
+}
+
+/* line 123, ../scss/components/_home.scss */
+.opened-status {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+}
+/* line 128, ../scss/components/_home.scss */
+.opened-status.green-brd {
+  border-left: 0px solid #00B74F;
+  color: #00B74F;
+}
+/* line 133, ../scss/components/_home.scss */
+.opened-status.red-brd {
+  border-left: 0px solid #00B74F;
+  color: #ba232c;
+}
+/* line 138, ../scss/components/_home.scss */
+.opened-status.yellow-brd {
+  border-left: 0px solid #00B74F;
+  color: #f78b28;
+}
+
+/* line 144, ../scss/components/_home.scss */
+.opened-time {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+/* line 149, ../scss/components/_home.scss */
+.opened-time-text {
+  font-size: 7px;
+}
+
+/* line 153, ../scss/components/_home.scss */
+.location-table {
+  height: 383px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 159, ../scss/components/_home.scss */
+.view-up-icon, .view-down-icon {
+  padding-bottom: 10px;
+  outline: none;
+}
+
+/* line 164, ../scss/components/_home.scss */
+.map-section {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+}
+
+/* line 168, ../scss/components/_home.scss */
+.arrow-section {
+  margin-top: 90px;
+}
+
+/* line 172, ../scss/components/_home.scss */
+.location-record-row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* to be included in media wrapper */
+@media (min-width: 768px) {
+  /* line 180, ../scss/components/_home.scss */
+  .address {
+    width: 40%;
+    padding-left: 15px;
+    background-color: #414042;
+  }
+
+  /* line 186, ../scss/components/_home.scss */
+  .record-time {
+    width: 11%;
+    background-color: #414042;
+    font-weight: bold;
+  }
+
+  /* line 192, ../scss/components/_home.scss */
+  .menu-title {
+    width: 15%;
+  }
+
+  /* line 196, ../scss/components/_home.scss */
+  .dir {
+    width: 21%;
+    background-color: #C2C1C2;
+  }
+
+  /* line 201, ../scss/components/_home.scss */
+  .status {
+    width: 13%;
+  }
+}
+/**************************/
 /* line 1, ../scss/components/_section.scss */
 #appSection {
   min-height: calc(100% - 300px);
@@ -14039,49 +14206,42 @@ body {
 }
 
 /* line 47, ../scss/components/_maps.scss */
-.map-data-row {
-  margin-bottom: 30px;
-  margin-top: 85px;
-}
-
-/* line 52, ../scss/components/_maps.scss */
 .home-header {
   font-size: 60px;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.75);
 }
 @media (max-width: 480px) {
-  /* line 52, ../scss/components/_maps.scss */
+  /* line 47, ../scss/components/_maps.scss */
   .home-header {
     font-size: 3.5rem;
   }
 }
 
-/* line 61, ../scss/components/_maps.scss */
+/* line 56, ../scss/components/_maps.scss */
 .home-sub-header {
   font-size: 25px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
 }
 @media (max-width: 480px) {
-  /* line 61, ../scss/components/_maps.scss */
+  /* line 56, ../scss/components/_maps.scss */
   .home-sub-header {
     font-size: 1.9rem;
   }
 }
 
-/* line 70, ../scss/components/_maps.scss */
+/* line 65, ../scss/components/_maps.scss */
 h3.location-title {
   text-shadow: 0px 0px 12px #000;
 }
 
-/* line 74, ../scss/components/_maps.scss */
+/* line 69, ../scss/components/_maps.scss */
 .search-container {
   margin-top: 70px;
 }
 
-/* line 78, ../scss/components/_maps.scss */
+/* line 73, ../scss/components/_maps.scss */
 .location-table {
   background: url("../images/BG_2.35-62.png") no-repeat;
-  background-color: rgba(15, 13, 15, 0.3);
   background-position: 0 100%;
   min-height: 383px;
   width: 100%;
@@ -14092,39 +14252,9 @@ h3.location-title {
     background: url("../images/BG_2.35-62.png") no-repeat;
     background-position: 0 100%;
 } */
-/* line 93, ../scss/components/_maps.scss */
-.record-header {
-  font-size: 1.7rem;
-  height: 29px;
-}
-
-/* line 97, ../scss/components/_maps.scss */
+/* line 88, ../scss/components/_maps.scss */
 .row-one {
   background-color: rgba(13, 14, 18, 0.3);
-}
-
-/* line 101, ../scss/components/_maps.scss */
-.menu-title {
-  height: 40px;
-}
-
-/* line 104, ../scss/components/_maps.scss */
-.location-record-row {
-  margin-top: 15px;
-}
-/* line 105, ../scss/components/_maps.scss */
-.location-record-row:first-child {
-  margin-top: 0;
-}
-
-/* line 111, ../scss/components/_maps.scss */
-.record-marker {
-  padding-left: 10px;
-}
-
-/* line 115, ../scss/components/_maps.scss */
-.record-time {
-  height: 4rem;
 }
 
 /*# sourceMappingURL=main.css.map */

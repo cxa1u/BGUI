@@ -5,8 +5,8 @@
  * # HomeController
  * Controller of the ufaasApp
  */
-angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler', '$scope', 'mapHandler',
-    function(apiService, geoHandler, $scope, mapHandler) {
+angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler', '$scope', 'mapHandler', 'homeService',
+    function(apiService, geoHandler, $scope, mapHandler, homeService) {
 
         var self = this;
         this.positionArray = [];
@@ -48,7 +48,7 @@ angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler',
         };
 
         this.searchStoresByZip = function(zipCode) {
-            zipCode =Number($.trim(zipCode)); 
+            zipCode = Number($.trim(zipCode));
             if (zipCode) {
                 self.renderStores(zipCode);
             } else {
@@ -60,11 +60,19 @@ angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler',
 
         this.renderStores = function(zipcode) {
             apiService.getStoresByZip(zipcode, function(storeData) {
-                
-              var restaurants, positionArray=[];
-                self.storeLocations = 0;
+
+                var restaurants, positionArray = [];
+                self.storeLocations = [];
                 if (storeData.restaurants.length) {
-                    self.storeLocations = restaurants = storeData.restaurants;
+
+                    self.storeLocations = restaurants = homeService.interpolateIcons(storeData.restaurants);
+
+                    console.log(self.storeLocations);
+
+                    self.storeLocations = [restaurants[0], restaurants[0], restaurants[0], restaurants[0], restaurants[0], restaurants[0]];
+
+
+
                     var i;
                     for (i = 0; i < restaurants.length; i++) {
 
@@ -72,7 +80,7 @@ angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler',
                         var lng = restaurants[i].address.geoCode.longitude;
                         positionArray.push({
                             position: new google.maps.LatLng(lat, lng),
-                            icon: "images/marker_green.png"
+                            icon: restaurants[i].iconPath
                         });
                         //storeData.restaurants[i].marker = generateMarkers(positionArray, map);
                     }
@@ -81,6 +89,9 @@ angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler',
                 }
             });
         };
+
+
+
 
 
         this.updateSearchParams = function(key, value) {
@@ -111,7 +122,32 @@ angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler',
                     geoHandler.focusLocation(positionArray[0].position);
                 }
             });
-        }
+        };
 
+
+        this.getIconClass = function(openNow, timeUntilClose) {
+            var classStr = "red-brd";
+            if (openNow) {
+                classStr = timeUntilClose.hours < 1 ? "yellow-brd" : "green-brd";
+            }
+
+            return classStr;
+        };
+
+        this.handleViewUp = function() {
+            var scrollOffset = $(".location-table").scrollTop();
+
+            $(".location-table").animate({
+                scrollTop: scrollOffset + 50
+            }, 500);
+        };
+
+        this.handleViewDown = function() {
+            var scrollOffset = $(".location-table").scrollTop();
+   
+            $(".location-table").animate({
+                scrollTop: scrollOffset - 50
+            }, 500);
+        };
     }
 ]);
