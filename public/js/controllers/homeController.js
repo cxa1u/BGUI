@@ -67,12 +67,6 @@ angular.module('BGUI').controller('HomeController', ['apiService', 'geoHandler',
 
                     self.storeLocations = restaurants = homeService.interpolateIcons(storeData.restaurants);
 
-                    console.log(self.storeLocations);
-
-                    self.storeLocations = [restaurants[0], restaurants[0], restaurants[0], restaurants[0], restaurants[0], restaurants[0]];
-
-
-
                     var i;
                     for (i = 0; i < restaurants.length; i++) {
 
